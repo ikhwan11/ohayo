@@ -31,6 +31,7 @@
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
                             <ul class="dropdown-menu">
@@ -41,6 +42,7 @@
                             </ul>
                         </li>
 
+                        <li class="nav-item"><a class="nav-link" href="#">Coach</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
                     </ul>
                 </div>

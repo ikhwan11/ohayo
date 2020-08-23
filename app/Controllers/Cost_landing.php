@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Landing extends BaseController
+class Cost_landing extends BaseController
 {
     public function index()
     {

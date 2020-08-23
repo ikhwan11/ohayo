@@ -379,7 +379,7 @@ button:focus {
 }
 .home_banner_area .banner_inner .banner_content h3 {
   font-size: 42px;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   font-weight: 900;
   margin-bottom: 20px;
 }
@@ -3243,7 +3243,7 @@ h6 {
 }
 .courses_inner .hover_text h4 {
   font-size: 18px;
-  color: #fff;
+  color: #21191b;
   margin-bottom: 15px;
   transition: all 300ms linear 0s;
 }
@@ -3252,7 +3252,7 @@ h6 {
   margin-right: 16px;
 }
 .courses_inner .hover_text .list li a {
-  color: #fff;
+  color: #21191b;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
