@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="/assets/learnit_templates/img/favicon.png" type="image/png">
-    <title>Ohayo Drawing School</title>
+    <link rel="icon" href="/assets/learnit_templates/img/ohayo_item/Logo_Ohayo.png" type="image/png">
+    <title><?= $tittle; ?></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/learnit_templates/css/bootstrap.css">
     <link rel="stylesheet" href="/assets/learnit_templates/vendors/linericon/style.css">
@@ -19,6 +19,8 @@
     <!-- main css -->
     <link rel="stylesheet" href="/assets/learnit_templates/css/style.css">
     <link rel="stylesheet" href="/assets/learnit_templates/css/responsive.css">
+
+
 </head>
 
 <body>
@@ -35,10 +37,9 @@
                     <div class="single-footer-widget tp_widgets">
                         <h6 class="footer_title">Quick Links</h6>
                         <ul class="list">
-                            <li><a href="#">Kelas kursus</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">About us</a></li>
-                            <li><a href="#">Daftar Kursus</a></li>
+                            <li><a href="#">Mendaftar Kursus</a></li>
                         </ul>
                     </div>
                 </div>
