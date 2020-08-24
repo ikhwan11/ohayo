@@ -8,7 +8,7 @@ class Course_manga extends BaseController
     {
         $course = 'Course |';
         $data = [
-            'tittle' => $course . ' Manga'
+            'tittle' => $course . ' Manga Class'
         ];
 
         return view('course/manga_view', $data);

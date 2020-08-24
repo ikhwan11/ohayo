@@ -12,21 +12,21 @@
         <div class="carousel-item active">
             <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
             <div class="carousel-caption">
-                <h1 style="color: #EF3660 ;">Manga Class</h1>
+                <h1 style="color: #EF3660 ;">Crayon Class</h1>
                 <p style="color: #EF3660 ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam alias provident repellat animi vitae eveniet vel quos dolorum! Aliquid quae qui molestias deserunt rerum praesentium quod expedita illo quam corrupti!</p>
             </div>
         </div>
         <div class="carousel-item">
             <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
             <div class="carousel-caption">
-                <h1 style="color: #EF3660 ;">Develop Your Imagination</h1>
+                <h1 style="color: #EF3660 ;">Train children's motor skills</h1>
                 <p style="color: #EF3660 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur debitis autem sunt unde quam excepturi quaerat distinctio, id vel sit repellendus, ipsum accusantium iusto maxime eaque quisquam impedit assumenda?</p>
             </div>
         </div>
         <div class="carousel-item">
             <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
             <div class="carousel-caption">
-                <h1 style="color: #EF3660 ;">Let's Draw Your Own OC</h1>
+                <h1 style="color: #EF3660 ;">Instill creativity</h1>
                 <p style="color: #EF3660 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos distinctio est nesciunt! Ipsa doloremque modi dolorum a minima et impedit dicta quibusdam officia, minus doloribus quaerat ullam, ad debitis.</p>
             </div>
         </div>
