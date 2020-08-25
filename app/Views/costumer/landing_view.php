@@ -189,7 +189,7 @@
                                     <h4>Manga Class</h4>
                                 </a>
                                 <ul class="list">
-                                    <li><a href="#"><i class="lnr lnr-user"></i> coach name</a></li>
+                                    <li><a href="/course_manga"><i class="lnr lnr-user"></i> coach name</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                         <div class="courses_item">
                             <img src="/assets/learnit_templates/img/ohayo_item/painting_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="#">Detail</a>
+                                <a class="cat" href="/course_painting">Detail</a>
                                 <a href="#">
                                     <h4>Painting Class</h4>
                                 </a>
@@ -212,7 +212,7 @@
                         <div class="courses_item">
                             <img src="/assets/learnit_templates/img/ohayo_item/crayon_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="#">Detail</a>
+                                <a class="cat" href="/course_crayon">Detail</a>
                                 <a href="#">
                                     <h4>Crayon Class</h4>
                                 </a>
@@ -226,7 +226,7 @@
                         <div class="courses_item">
                             <img src="/assets/learnit_templates/img/ohayo_item/digitalart_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="#">Detail</a>
+                                <a class="cat" href="/course_digital">Detail</a>
                                 <a href="#">
                                     <h4>Manga Digital Art Class</h4>
                                 </a>
@@ -241,15 +241,6 @@
             <div class="col-lg-3">
                 <div class="course_item">
                     <img src="/assets/learnit_templates/img/courses/course-3.jpg" alt="">
-                    <div class="hover_text">
-                        <a class="cat" href="#">Detail</a>
-                        <a href="#">
-                            <h4>Mopi baca tulis</h4>
-                        </a>
-                        <ul class="list">
-                            <li><a href=" #"><i class="lnr lnr-user"></i> coach name</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
