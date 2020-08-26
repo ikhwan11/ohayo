@@ -13,6 +13,7 @@
                 <tr>
                     <th>No</th>
                     <th>disini field tabel</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
 
@@ -22,13 +23,16 @@
                     <td><?php $no = 1;
                         echo $no++; ?></td>
                     <td>disini isi record table</td>
+                    <td>
+                        <a href="" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                        <a href="" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                    </td>
                 </tr>
             </tbody>
         </table>
 
         <a href="#" class="btn btn-primary mb-3 mr-3">Tambah Data Murid</a>
-        <a href="#" class="btn btn-warning mb-3 mr-3">Edit Data Murid</a>
-        <a href="#" class="btn btn-danger mb-3">Hapus Data Murid</a>
+
     </div>
 </div>
 

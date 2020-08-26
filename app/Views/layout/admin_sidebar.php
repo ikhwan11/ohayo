@@ -33,14 +33,14 @@
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fas fa-fw fa-cog"></i>
+                <i class="fas fa-child"></i>
                 <span>Murid</span>
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="/admin/data_murid">Data Murid</a>
-                    <a class="collapse-item" href="#">Info Jatuh Tempo</a>
-                    <a class="collapse-item" href="#">Lihat Murid Terdaftar</a>
+                    <a class="collapse-item" href="/admin/jatuh_tempo">Info Jatuh Tempo</a>
+                    <a class="collapse-item" href="/admin/murid_daftar">Murid Daftar Baru</a>
                 </div>
             </div>
         </li>
@@ -55,13 +55,13 @@
 
         <!-- Nav Item  -->
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
+            <a class="nav-link" href="/admin/artikel">
+                <i class="fas fa-newspaper"></i>
                 <span>Artikel</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-images"></i>
                 <span>Galeri</span></a>
         </li>
 
@@ -74,22 +74,22 @@
 
         <li class="nav-item">
             <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-school"></i>
                 <span>Kelas</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-paint-brush"></i>
                 <span>Alat lukis</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
+                <i class="fas fa-file-alt"></i>
                 <span>Cetak Laporan</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
