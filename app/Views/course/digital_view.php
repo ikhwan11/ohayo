@@ -10,21 +10,21 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
+            <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
             <div class="carousel-caption">
                 <h1 style="color: #EF3660 ;">Manga Digital Art Class</h1>
                 <p style="color: #EF3660 ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam alias provident repellat animi vitae eveniet vel quos dolorum! Aliquid quae qui molestias deserunt rerum praesentium quod expedita illo quam corrupti!</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
+            <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
             <div class="carousel-caption">
                 <h1 style="color: #EF3660 ;">Digitize your character</h1>
                 <p style="color: #EF3660 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur debitis autem sunt unde quam excepturi quaerat distinctio, id vel sit repellendus, ipsum accusantium iusto maxime eaque quisquam impedit assumenda?</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
+            <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
             <div class="carousel-caption">
                 <h1 style="color: #EF3660 ;">Create in new ways</h1>
                 <p style="color: #EF3660 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos distinctio est nesciunt! Ipsa doloremque modi dolorum a minima et impedit dicta quibusdam officia, minus doloribus quaerat ullam, ad debitis.</p>

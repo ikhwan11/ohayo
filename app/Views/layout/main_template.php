@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="/assets/learnit_templates/img/ohayo_item/Logo_Ohayo.png" type="image/png">
+    <link rel="icon" href="/assets/ohayo_item/Logo_Ohayo.png" type="image/png">
     <title><?= $tittle; ?></title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/learnit_templates/css/bootstrap.css">
@@ -37,8 +37,8 @@
                     <div class="single-footer-widget tp_widgets">
                         <h6 class="footer_title">Quick Links</h6>
                         <ul class="list">
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="/galeri">Gallery</a></li>
+                            <li><a href="/costumer/cost_about">About us</a></li>
                             <li><a href="#">Mendaftar Kursus</a></li>
                         </ul>
                     </div>

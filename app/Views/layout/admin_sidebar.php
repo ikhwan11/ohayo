@@ -7,7 +7,7 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon">
-                <img src="/assets/learnit_templates/img/ohayo_item/Logo_Ohayo.png" width="80">
+                <img src="/assets/ohayo_item/Logo_Ohayo.png" width="80">
             </div>
             <div class="sidebar-brand-text mx-3">Admin</div>
         </a>
@@ -38,10 +38,8 @@
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="#">Data Murid</a>
-                    <a class="collapse-item" href="#">Tambah Murid</a>
-                    <a class="collapse-item" href="#">Edit Data Murid</a>
-                    <a class="collapse-item" href="#">Info Pembayaran</a>
+                    <a class="collapse-item" href="/admin/data_murid">Data Murid</a>
+                    <a class="collapse-item" href="#">Info Jatuh Tempo</a>
                     <a class="collapse-item" href="#">Lihat Murid Terdaftar</a>
                 </div>
             </div>
@@ -74,6 +72,11 @@
             Other
         </div>
 
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Kelola User</span></a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="charts.html">
                 <i class="fas fa-fw fa-chart-area"></i>

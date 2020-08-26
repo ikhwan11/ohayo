@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/assets/learnit_templates/img/ohayo_item/Logo_Ohayo.png" type="image/png">
+    <link rel="icon" href="/assets/ohayo_item/Logo_Ohayo.png" type="image/png">
 
     <title><?= $tittle; ?></title>
 

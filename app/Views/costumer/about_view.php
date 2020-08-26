@@ -10,13 +10,13 @@
      </ol>
      <div class="carousel-inner">
          <div class="carousel-item active">
-             <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
+             <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
          </div>
          <div class="carousel-item">
-             <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
+             <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
          </div>
          <div class="carousel-item">
-             <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" class="tales" alt="...">
+             <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
          </div>
      </div>
      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

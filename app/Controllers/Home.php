@@ -7,9 +7,11 @@ class Home extends BaseController
 	public function index()
 	{
 
-		return view('welcome_message');
+		$corp = 'Ohayo |';
+		$data = [
+			'tittle' => $corp . ' Beranda'
+		];
+
+		return view('costumer/landing_view', $data);
 	}
-
-	//--------------------------------------------------------------------
-
 }

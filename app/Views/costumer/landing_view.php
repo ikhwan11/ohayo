@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="categories_post">
-                    <img src="/assets/learnit_templates/img/ohayo_item/daily_art.jpg" alt="post">
+                    <img src="/assets/ohayo_item/daily_art.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
                             <a href="#">
@@ -40,7 +40,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="categories_post">
-                    <img src="/assets/learnit_templates/img/ohayo_item/tps_trik.jpg" alt="post">
+                    <img src="/assets/ohayo_item/tps_trik.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
                             <a href="#">
@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="categories_post">
-                    <img src="/assets/learnit_templates/img/ohayo_item/event.jpg" alt="post">
+                    <img src="/assets/ohayo_item/event.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
                             <a href="#">
@@ -182,7 +182,7 @@
                 <div class="grid_inner">
                     <div class="grid_item wd55">
                         <div class="courses_item">
-                            <img src="/assets/learnit_templates/img/ohayo_item/manga_class.jpg" alt="">
+                            <img src="/assets/ohayo_item/manga_class.jpg" alt="">
                             <div class="hover_text">
                                 <a class="cat" href="#">Detail</a>
                                 <a href="#">
@@ -196,7 +196,7 @@
                     </div>
                     <div class="grid_item wd44">
                         <div class="courses_item">
-                            <img src="/assets/learnit_templates/img/ohayo_item/painting_class.jpg" alt="">
+                            <img src="/assets/ohayo_item/painting_class.jpg" alt="">
                             <div class="hover_text">
                                 <a class="cat" href="/course_painting">Detail</a>
                                 <a href="#">
@@ -210,7 +210,7 @@
                     </div>
                     <div class="grid_item wd44">
                         <div class="courses_item">
-                            <img src="/assets/learnit_templates/img/ohayo_item/crayon_class.jpg" alt="">
+                            <img src="/assets/ohayo_item/crayon_class.jpg" alt="">
                             <div class="hover_text">
                                 <a class="cat" href="/course_crayon">Detail</a>
                                 <a href="#">
@@ -224,7 +224,7 @@
                     </div>
                     <div class="grid_item wd55">
                         <div class="courses_item">
-                            <img src="/assets/learnit_templates/img/ohayo_item/digitalart_class.jpg" alt="">
+                            <img src="/assets/ohayo_item/digitalart_class.jpg" alt="">
                             <div class="hover_text">
                                 <a class="cat" href="/course_digital">Detail</a>
                                 <a href="#">
@@ -252,7 +252,7 @@
 <section class="impress_area p_120">
     <div class="container">
         <div class="impress_inner text-center">
-            <img src="/assets/learnit_templates/img/ohayo_item/Logo_Ohayo.png" alt="Logo Ohayo" style="width: 300px;">
+            <img src="/assets/ohayo_item/Logo_Ohayo.png" alt="Logo Ohayo" style="width: 300px;">
             <h2>Ohayo Drawing School Batam</h2>
         </div>
     </div>
