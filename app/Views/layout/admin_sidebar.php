@@ -5,7 +5,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin/admin_dashboard">
             <div class="sidebar-brand-icon">
                 <img src="/assets/ohayo_item/Logo_Ohayo.png" width="80">
             </div>
@@ -17,7 +17,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="/admin/admin_dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -60,7 +60,7 @@
                 <span>Artikel</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="/admin/galeri">
                 <i class="fas fa-images"></i>
                 <span>Galeri</span></a>
         </li>
@@ -73,7 +73,7 @@
         </div>
 
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="/admin/kelola_user">
                 <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
         </li>

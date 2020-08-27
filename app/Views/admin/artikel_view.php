@@ -18,12 +18,23 @@
 
                         <label for="">Upload Gambar</label>
                         <input type="file" class="form-control form-control-user" id="">
+
+                        <label>Kategori Artikel</label>
+                        <select class="form-control" name="">
+                            <option value="disable">== pilih kategori Artikel==</option>
+                            <option value="travel">Art</option>
+                            <option value="news">Manga</option>
+                            <option value="kuliner">Event</option>
+                            <option value="teknologi">News</option>
+                        </select>
                     </div>
                     <div class="col-md-6">
                         <label for="">Input Keterangan Singkat</label>
-                        <textarea name="" id="" rows="5" class="form-control form-control-user"></textarea>
+                        <textarea name="" id="" rows="8" class="form-control form-control-user"></textarea>
                     </div>
+
                 </div>
+
                 <div class="form-group">
                     <div class="col">
                         <label for="">Isi artikel</label>

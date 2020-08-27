@@ -26,7 +26,7 @@
 
 <body>
 
-    <?= $this->include('layout/navbar'); ?>
+    <?= $this->include('layout/murid_navbar'); ?>
     <?= $this->renderSection('content'); ?>
 
     <!--================ start footer Area  =================-->

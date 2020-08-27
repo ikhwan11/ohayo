@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <!--================Home Banner Area =================-->
 <section class="home_banner_area">
-    <div class="banner_inner d-flex align-items-center jumbotron">
+    <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing">
         <div class="container">
             <div class="banner_content text-right">
                 <h3 style="color: #EF3660 ;">Let's Join With us</h3>
@@ -184,12 +184,12 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/manga_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="#">Detail</a>
+                                <a class="cat" href="/course/course_manga">Detail</a>
                                 <a href="#">
                                     <h4>Manga Class</h4>
                                 </a>
                                 <ul class="list">
-                                    <li><a href="/course_manga"><i class="lnr lnr-user"></i> coach name</a></li>
+                                    <li><a href="#"><i class="lnr lnr-user"></i> coach name</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/painting_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course_painting">Detail</a>
+                                <a class="cat" href="/course/course_painting">Detail</a>
                                 <a href="#">
                                     <h4>Painting Class</h4>
                                 </a>
@@ -212,7 +212,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/crayon_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course_crayon">Detail</a>
+                                <a class="cat" href="/course/course_crayon">Detail</a>
                                 <a href="#">
                                     <h4>Crayon Class</h4>
                                 </a>
@@ -226,7 +226,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/digitalart_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course_digital">Detail</a>
+                                <a class="cat" href="/course/course_digital">Detail</a>
                                 <a href="#">
                                     <h4>Manga Digital Art Class</h4>
                                 </a>
@@ -252,7 +252,6 @@
 <section class="impress_area p_120">
     <div class="container">
         <div class="impress_inner text-center">
-            <img src="/assets/ohayo_item/Logo_Ohayo.png" alt="Logo Ohayo" style="width: 300px;">
             <h2>Ohayo Drawing School Batam</h2>
         </div>
     </div>

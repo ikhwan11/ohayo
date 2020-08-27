@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="/"><img src="/assets/ohayo_item/Logo_Ohayo.png" alt=""></a>
+                <a class="navbar-brand logo_h" href="/cost_landing/"><img src="/assets/ohayo_item/Logo_Ohayo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -42,7 +42,15 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/costumer/galeri">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/auth/login">Login</a></li>
+
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yoshiko</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="#">Setting</a>
+                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a>
+                                <li class="nav-item"><a class="nav-link" href="/">Logout</a>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
