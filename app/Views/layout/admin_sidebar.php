@@ -25,79 +25,56 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
 
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Kelola Murid
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fas fa-child"></i>
-                <span>Murid</span>
+                <i class="fas fa-cash-register"></i>
+                <span>Transaksi</span>
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/admin/data_murid">Data Murid</a>
-                    <a class="collapse-item" href="/admin/jatuh_tempo">Info Jatuh Tempo</a>
-                    <a class="collapse-item" href="/admin/murid_daftar">Murid Daftar Baru</a>
+                    <a class="collapse-item" href="/admin/transaksi_kelas">Tambah kelas</a>
+                    <a class="collapse-item" href="/admin/transaksi_lain">Transaksi lain</a>
                 </div>
             </div>
         </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Kelola website
-        </div>
-
-        <!-- Nav Item  -->
         <li class="nav-item">
-            <a class="nav-link" href="/admin/artikel">
-                <i class="fas fa-newspaper"></i>
-                <span>Artikel</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/admin/galeri">
-                <i class="fas fa-images"></i>
-                <span>Galeri</span></a>
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fas fa-child"></i>
+                <span>Kelola Peserta</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="/admin/data_peserta">Data peserta</a>
+                    <a class="collapse-item" href="/admin/pendaftaran">Pendaftaran terbaru</a>
+                    <a class="collapse-item" href="/admin/form_pendaftaran">Tambah Peserta</a>
+                </div>
+            </div>
         </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-
-        <div class="sidebar-heading">
-            Other
-        </div>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fas fa-globe-asia"></i>
+                <span>Kelola website</span>
+            </a>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="/admin/manajemen_artikel">Artikel</a>
+                    <a class="collapse-item" href="/admin/event">Event</a>
+                </div>
+            </div>
+        </li>
 
         <li class="nav-item">
             <a class="nav-link" href="/admin/kelola_user">
                 <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="/admin/equipment">
                 <i class="fas fa-school"></i>
-                <span>Kelas</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-                <i class="fas fa-paint-brush"></i>
-                <span>Alat lukis</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-file-alt"></i>
-                <span>Cetak Laporan</span>
-            </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="#">Murid</a>
-                    <a class="collapse-item" href="#">Keuangan</a>
-                </div>
-            </div>
+                <span>Equipment</span></a>
         </li>
 
 

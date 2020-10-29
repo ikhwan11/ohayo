@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Data User</h1>
+            <h1>Data Barang (Equipment)</h1>
         </div>
 
         <table class="table table-hover table-striped table-bordered">
@@ -24,14 +24,13 @@
                         echo $no++; ?></td>
                     <td>disini isi record table</td>
                     <td>
-                        <a href="" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                        <a href="" class="btn btn-primary"><i class="fas fa-eye"></i></a>
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <a href="/admin/tambah_user" class="btn btn-primary mb-3 mr-3">Tambah user</a>
+        <a href="/admin/tambah_stok" class="btn btn-primary mb-3 mr-3 btn-lg">Tambah stok barang</a>
 
     </div>
 </div>

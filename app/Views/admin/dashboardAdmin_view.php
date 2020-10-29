@@ -27,7 +27,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Saldo Kas</div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Pendapatan bulan ini</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">Rp.600.000</div>
                         </div>
                         <div class="col-auto">
@@ -44,7 +44,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Murid</div>
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Peserta aktif</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">65 orang</div>
                         </div>
                         <div class="col-auto">
@@ -60,7 +60,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Murid Jatuh Tempo</div>
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">total peserta cuti</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">5 orang</div>
 
                         </div>

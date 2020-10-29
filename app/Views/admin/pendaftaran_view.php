@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Data User</h1>
+            <h1>Murid Daftar Baru</h1>
         </div>
 
         <table class="table table-hover table-striped table-bordered">
@@ -22,16 +22,15 @@
 
                     <td><?php $no = 1;
                         echo $no++; ?></td>
+
                     <td>disini isi record table</td>
-                    <td>
-                        <a href="" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
-                    </td>
+
+                    <td><a href="" class="btn btn-warning">Import</a></td>
                 </tr>
             </tbody>
         </table>
 
-        <a href="/admin/tambah_user" class="btn btn-primary mb-3 mr-3">Tambah user</a>
+        <a href="/admin/admin_dashboard" class="btn btn-primary mb-3 mr-3">Kembali Ke Dashboard</a>
 
     </div>
 </div>
