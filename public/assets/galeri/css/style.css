@@ -1,0 +1,92 @@
+h1 {
+  font-size: 60px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.kotak {
+  width: 920px;
+  background-color: #4dbf1c;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.gallery li {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 5px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery li a img {
+  border-radius: 50%;
+  border: 5px solid #f11b86;
+}
+
+.clear {
+  clear: both;
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.8s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0, 0.5);
+}
+
+.overlay .close {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -50px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid #4dbf1c;
+  padding: 5px;
+}
+
+.overlay .container {
+  height: auto;
+  width: 600px;
+}
+
+.overlay .container .card {
+  text-align: left;
+  color: #f11b86;
+  font-size: 30px;
+  background-color: #4dbf1c;
+  bottom: 60px;
+}
+
+.overlay .container .card .card-body p {
+  color: black;
+  font-size: 20px;
+}

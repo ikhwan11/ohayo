@@ -32,7 +32,7 @@
                     <img src="/assets/ohayo_item/daily_art.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
-                            <a href="#">
+                            <a href="/peserta/galeri">
                                 <h5>Art Gallery</h5>
                             </a>
                             <div class="border_line"></div>
