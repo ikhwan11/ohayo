@@ -38,7 +38,7 @@
                     <div class="single-footer-widget tp_widgets">
                         <h6 class="footer_title">Quick Links</h6>
                         <ul class="list">
-                            <li><a href="/galeri">Gallery</a></li>
+
                             <li><a href="/costumer/cost_about">About us</a></li>
                             <li><a href="#">Mendaftar Kursus</a></li>
                         </ul>
@@ -63,8 +63,7 @@
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy; Ohayo drawing school batam <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </script>
                 </p>
                 <div class="col-lg-4 col-md-4 footer-social">
                     <a href="#"><i class="fa fa-facebook"></i></a>

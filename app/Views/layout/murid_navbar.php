@@ -41,13 +41,11 @@
                                 <li class="nav-item"><a class="nav-link" href="/course/course_crayon">Crayon</a>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/costumer/galeri">Gallery</a></li>
 
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yoshiko</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="#">Setting</a>
-                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a>
                                 <li class="nav-item"><a class="nav-link" href="/">Logout</a>
                             </ul>
                         </li>

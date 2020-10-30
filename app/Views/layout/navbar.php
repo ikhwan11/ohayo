@@ -41,7 +41,6 @@
                                 <li class="nav-item"><a class="nav-link" href="/course/course_crayon">Crayon</a>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/costumer/galeri">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="/auth/login">Login</a></li>
                     </ul>
                 </div>

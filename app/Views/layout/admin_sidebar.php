@@ -32,6 +32,7 @@
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="/admin/data_transaksi">Data transaksi</a>
                     <a class="collapse-item" href="/admin/transaksi_kelas">Tambah kelas</a>
                     <a class="collapse-item" href="/admin/transaksi_lain">Transaksi lain</a>
                 </div>

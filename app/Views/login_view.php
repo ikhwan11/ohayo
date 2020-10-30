@@ -51,7 +51,7 @@
                                             <input type="password" class="form-control form-control-user" id="" placeholder="masukkan Password...">
                                         </div>
 
-                                        <a href="/admin/admin_dashboard" class="btn btn-login btn-user btn-block">
+                                        <a href="/peserta/peserta_dashboard" class="btn btn-login btn-user btn-block">
                                             Login
                                         </a>
                                     </form>

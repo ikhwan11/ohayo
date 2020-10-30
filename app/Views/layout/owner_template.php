@@ -23,8 +23,8 @@
 
 <body id="page-top">
 
-    <?= $this->include('layout/admin_sidebar'); ?>
-    <?= $this->include('layout/admin_topbar'); ?>
+    <?= $this->include('layout/owner_sidebar'); ?>
+    <?= $this->include('layout/owner_topbar'); ?>
     <?= $this->renderSection('content'); ?>
 
     <!-- Footer -->
