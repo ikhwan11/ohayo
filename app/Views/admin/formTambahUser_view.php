@@ -10,43 +10,33 @@
     </div>
     <div class="row">
         <div class="col">
-            <form action="">
-                <div class="form-group row">
-                    <div class="form-group row mt-2 ml-1">
-                        <form class="form-inline">
-                            <div class="form-group mb-2">
-                                <label>Nama atau id</label>
-                            </div>
-                            <div class="form-group mx-sm-3 mb-2">
-                                <input type="text" class="form-control" id="inputnama" placeholder="Text here..">
-                            </div>
-                            <button type="submit" class="btn btn-primary mb-2">cek peserta</button>
-                        </form>
-
-                    </div>
-                </div>
+            <?= session()->get('pesan'); ?>
+            <form action="tambah_user/register" method="POST">
 
                 <div class="form-group row">
                     <div class="col-md-6">
 
-                        <label for="">username</label>
-                        <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
+                        <label for="nama">nama</label>
+                        <input type="text" class="form-control form-control-user" name="nama" id="nama" placeholder="Text here..."><br>
 
-                        <label for="">password</label>
-                        <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
 
-                        <label>hak akses</label>
-                        <select class="form-control" name="">
+                        <label for="username">username</label>
+                        <input type="text" class="form-control form-control-user" name="username" id="username" placeholder="Text here..."><br>
+
+                        <label for="password">password</label>
+                        <input type="text" class="form-control form-control-user" name="password" id="password" placeholder="Text here..."><br>
+
+                        <label for="level">hak akses</label>
+                        <select class="form-control" name="level" id="level">
                             <option value="disable">== pilih akses==</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
+                            <option value="owner">Owner</option>
+                            <option value="admin">Admin</option>
+                            <option value="peserta">Peserta</option>
 
                         </select> <br>
+                        <button type="submit" class="btn btn-primary btn-lg">Simpan</button>
 
-                        <a href="" class="btn btn-primary btn-lg">Simpan</a>
                     </div>
-
                 </div>
             </form>
         </div>

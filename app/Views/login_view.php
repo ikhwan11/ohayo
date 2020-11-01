@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= $tittle; ?></title>
+    <title>Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="/assets/admin_sb/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,17 +43,16 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 my-4">Form Login</h1>
                                     </div>
-                                    <form class="user">
+                                    <?= session()->get('pesan'); ?>
+                                    <form action="/login/masuk" method="POST" class="user">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="" aria-describedby="" placeholder="Masukkan username...">
+                                            <input type="text" class="form-control form-control-user" name="username" aria-describedby="" placeholder="Masukkan username...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="" placeholder="masukkan Password...">
+                                            <input type="password" class="form-control form-control-user" name="password" placeholder="masukkan Password...">
                                         </div>
 
-                                        <a href="/peserta/peserta_dashboard" class="btn btn-login btn-user btn-block">
-                                            Login
-                                        </a>
+                                        <button type="submit" class="btn btn-login btn-user btn-block">Login</button>
                                     </form>
                                 </div>
                             </div>
