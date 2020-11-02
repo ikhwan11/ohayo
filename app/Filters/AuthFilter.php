@@ -22,7 +22,7 @@ class AuthFilter implements FilterInterface
     {
         $session = session();
         if ($session->get('log') == TRUE) {
-            return redirect()->to('/admin/admin_dashboard');
+            return redirect()->to('/Admin_dashboard');
         }
     }
 }

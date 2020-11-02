@@ -29,24 +29,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/costumer/cost_about/">About us</a></li>
-
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/course/course_manga">Manga</a>
-                                <li class="nav-item"><a class="nav-link" href="/course/course_painting">Painting</a>
-                                <li class="nav-item"><a class="nav-link" href="/course/course_digital">Manga Digital</a>
-                                <li class="nav-item"><a class="nav-link" href="/course/course_crayon">Crayon</a>
-                            </ul>
-                        </li>
-
+                        <li class="nav-item"><a class="nav-link" href="/Peserta_dashboard">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Peserta_galeri">My Art</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Peserta_dailyActivity">My Activity</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yoshiko</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="#">Setting</a>
-                                <li class="nav-item"><a class="nav-link" href="/">Logout</a>
+                                <li class="nav-item"><a class="nav-link" href="login/keluar">Logout</a>
                             </ul>
                         </li>
                     </ul>

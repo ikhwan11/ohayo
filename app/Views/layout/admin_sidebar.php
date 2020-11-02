@@ -17,7 +17,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="/admin/admin_dashboard">
+            <a class="nav-link" href="/Admin_dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -32,9 +32,9 @@
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/admin/data_transaksi">Data transaksi</a>
-                    <a class="collapse-item" href="/admin/transaksi_kelas">Tambah kelas</a>
-                    <a class="collapse-item" href="/admin/transaksi_lain">Transaksi lain</a>
+                    <a class="collapse-item" href="/Admin_dataTransaksi">Data transaksi</a>
+                    <a class="collapse-item" href="/Admin_transaksiKelas">Tambah kelas</a>
+                    <a class="collapse-item" href="/Admin_transaksiLain">Transaksi lain</a>
                 </div>
             </div>
         </li>
@@ -46,9 +46,9 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/admin/data_peserta">Data peserta</a>
-                    <a class="collapse-item" href="/admin/pendaftaran">Pendaftaran terbaru</a>
-                    <a class="collapse-item" href="/admin/form_pendaftaran">Tambah Peserta</a>
+                    <a class="collapse-item" href="/Admin_dataPeserta">Data peserta</a>
+                    <a class="collapse-item" href="/Admin_pendaftaran">Pendaftaran terbaru</a>
+                    <a class="collapse-item" href="/Admin_formPendaftaran">Tambah Peserta</a>
                 </div>
             </div>
         </li>
@@ -60,20 +60,20 @@
             </a>
             <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/admin/manajemen_artikel">Artikel</a>
-                    <a class="collapse-item" href="/admin/event">Event</a>
+                    <a class="collapse-item" href="/Admin_manajemenArtikel">Artikel</a>
+                    <a class="collapse-item" href="/Admin_event">Event</a>
                 </div>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="/admin/kelola_user">
+            <a class="nav-link" href="/Admin_kelolaUser">
                 <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="/admin/equipment">
+            <a class="nav-link" href="/Admin_equipment">
                 <i class="fas fa-school"></i>
                 <span>Equipment</span></a>
         </li>

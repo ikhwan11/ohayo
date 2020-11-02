@@ -30,7 +30,7 @@
             </tbody>
         </table>
 
-        <a href="/admin/admin_dashboard" class="btn btn-primary mb-3 mr-3">Kembali Ke Dashboard</a>
+        <a href="/Admin_dashboard" class="btn btn-primary mb-3 mr-3">Kembali Ke Dashboard</a>
 
     </div>
 </div>

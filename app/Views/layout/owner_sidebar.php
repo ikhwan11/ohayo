@@ -17,7 +17,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="/owner/owner_dashboard">
+            <a class="nav-link" href="/Owner_dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -26,7 +26,7 @@
         <hr class="sidebar-divider">
 
         <li class="nav-item">
-            <a class="nav-link" href="/owner/transaksi">
+            <a class="nav-link" href="/Owner_transaksi">
                 <i class="fas fa-cash-register"></i>
                 <span>Data transaksi</span></a>
         </li>
@@ -38,15 +38,15 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/owner/data_peserta">Data peserta</a>
-                    <a class="collapse-item" href="/owner/pendaftaran">Tambah Peserta</a>
+                    <a class="collapse-item" href="/Owner_dataPeserta">Data peserta</a>
+                    <a class="collapse-item" href="/Owner_pendaftaran">Tambah Peserta</a>
                 </div>
             </div>
         </li>
 
 
         <li class="nav-item">
-            <a class="nav-link" href="/owner/kelola_user">
+            <a class="nav-link" href="/Owner_kelolaUser">
                 <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
         </li>

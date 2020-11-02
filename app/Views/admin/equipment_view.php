@@ -30,7 +30,7 @@
             </tbody>
         </table>
 
-        <a href="/admin/tambah_stok" class="btn btn-primary mb-3 mr-3 btn-lg">Tambah stok barang</a>
+        <a href="/Admin_tambahStok" class="btn btn-primary mb-3 mr-3 btn-lg">Tambah stok barang</a>
 
     </div>
 </div>

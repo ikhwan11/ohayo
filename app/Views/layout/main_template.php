@@ -39,7 +39,7 @@
                         <h6 class="footer_title">Quick Links</h6>
                         <ul class="list">
 
-                            <li><a href="/costumer/cost_about">About us</a></li>
+                            <li><a href="/Web_about">About us</a></li>
                             <li><a href="#">Mendaftar Kursus</a></li>
                         </ul>
                     </div>

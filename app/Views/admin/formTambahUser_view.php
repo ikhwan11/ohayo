@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col">
             <?= session()->get('pesan'); ?>
-            <form action="tambah_user/register" method="POST">
+            <form action="Admin_tambahUser/register" method="POST">
 
                 <div class="form-group row">
                     <div class="col-md-6">

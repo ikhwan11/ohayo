@@ -178,13 +178,13 @@
             <p>Ini adalah kelas kursus di ohayo drawing school batam</p>
         </div>
         <div class="row courses_inner">
-            <div class="col-lg-9">
+            <div class="col-lg-9 ">
                 <div class="grid_inner">
                     <div class="grid_item wd55">
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/manga_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course/course_manga">Detail</a>
+                                <a class="cat" href="/Web_courseManga">Detail</a>
                                 <a href="#">
                                     <h4>Manga Class</h4>
                                 </a>
@@ -198,7 +198,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/painting_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course/course_painting">Detail</a>
+                                <a class="cat" href="/Web_coursePainting">Detail</a>
                                 <a href="#">
                                     <h4>Painting Class</h4>
                                 </a>
@@ -212,7 +212,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/crayon_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course/course_crayon">Detail</a>
+                                <a class="cat" href="/Web_courseCrayon">Detail</a>
                                 <a href="#">
                                     <h4>Crayon Class</h4>
                                 </a>
@@ -226,7 +226,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/digitalart_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/course/course_digital">Detail</a>
+                                <a class="cat" href="/Web_courseDigital">Detail</a>
                                 <a href="#">
                                     <h4>Manga Digital Art Class</h4>
                                 </a>
@@ -236,11 +236,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="course_item">
-                    <img src="/assets/learnit_templates/img/courses/course-3.jpg" alt="">
                 </div>
             </div>
         </div>

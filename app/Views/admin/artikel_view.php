@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <a href="" class="btn btn-primary">Submit</a>
-                <a href="/admin/manajemen_artikel" class="btn btn-warning">Manajemen Artikel</a>
+                <a href="/Admin_manajemenArtikel" class="btn btn-warning">Manajemen Artikel</a>
             </form>
         </div>
     </div>

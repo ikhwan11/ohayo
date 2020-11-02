@@ -32,7 +32,7 @@
                     <img src="/assets/ohayo_item/daily_art.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
-                            <a href="/peserta/galeri">
+                            <a href="/Peserta_galeri">
                                 <h5>Art Gallery</h5>
                             </a>
                             <div class="border_line"></div>
@@ -46,7 +46,7 @@
                     <img src="/assets/ohayo_item/tps_trik.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
-                            <a href="#">
+                            <a href="/Peserta_dailyActivity">
                                 <h5>Daily Activity</h5>
                             </a>
                             <div class="border_line"></div>

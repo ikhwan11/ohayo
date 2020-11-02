@@ -31,7 +31,7 @@
             </tbody>
         </table>
 
-        <a href="/admin/tambah_user" class="btn btn-primary mb-3 mr-3">Tambah user</a>
+        <a href="/Admin_tambahUser" class="btn btn-primary mb-3 mr-3">Tambah user</a>
 
     </div>
 </div>

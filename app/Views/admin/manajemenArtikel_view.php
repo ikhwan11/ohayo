@@ -31,7 +31,7 @@
             </tbody>
         </table>
 
-        <a href="/admin/artikel" class="btn btn-primary mb-3 mr-3">Tambah Artikel Baru</a>
+        <a href="/Admin_artikel" class="btn btn-primary mb-3 mr-3">Tambah Artikel Baru</a>
 
     </div>
 </div>
