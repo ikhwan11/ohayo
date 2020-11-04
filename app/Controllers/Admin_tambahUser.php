@@ -11,12 +11,44 @@ class Admin_tambahUser extends BaseController
         $corp = 'Admin |';
         $data = [
             'tittle' => $corp . ' Kelola User',
+            'validation' => \Config\Services::validation()
         ];
 
         return view('admin/formTambahUser_view', $data);
     }
     public function register()
     {
+        if (!$this->validate([
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'username' => [
+                'rules' => 'required|is_unique[users.username]',
+                'errors' => [
+                    'required' => '{field} wajib diisi.',
+                    'is_unique' => '{field} sudah dipakai.'
+                ]
+            ],
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'level' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+        ])) {
+            $validation = \Config\Services::validation();
+
+            return redirect()->to('/Admin_tambahUser/')->withInput()->with('validation', $validation);
+        }
 
         $data = array(
             'nama' => $this->request->getVar('nama'),
@@ -32,6 +64,6 @@ class Admin_tambahUser extends BaseController
           <span aria-hidden="true">&times;</span>
         </button>
       </div>');
-        return redirect()->to('/admin/tambah_user');
+        return redirect()->to('/admin_tambahUser/');
     }
 }

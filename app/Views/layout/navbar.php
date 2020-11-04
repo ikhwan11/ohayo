@@ -41,7 +41,8 @@
                                 <li class="nav-item"><a class="nav-link" href="/Web_courseCrayon">Crayon</a>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/login/">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Web_pendaftaran">Daftar Kursus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login/masuk">Login</a></li>
                     </ul>
                 </div>
             </div>

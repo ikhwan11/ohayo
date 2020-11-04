@@ -12,17 +12,16 @@ class Filters extends BaseConfig
 		'csrf'     => \CodeIgniter\Filters\CSRF::class,
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
-		// 'authfilter' => \App\Filters\AuthFilter::class,
 	];
 	// Always applied before every request
 	public $globals = [
 		'before' => [
-			// 'authfilter' => ['except' => ['/', 'login/', 'Web_about/', 'Web_courseCrayon/', 'Web_courseManga/', 'Web_courseDigital/', 'Web_coursePainting/']],
+
 			// 'honeypot',
 			// 'csrf',
 		],
 		'after'  => [
-			// 'authfilter' => ['except' => ['/Admin_dashboard/', 'Admin_artikel/', 'Admin_dataPeserta/', 'Admin_dataTransaksi/', 'Admin_equipment/',  'Admin_event/', 'Admin_formPendaftaran/', 'Admin_kelolaUser/', 'Admin_manajemenArtikel/', 'Admin_pendaftaran/', 'Admin_tambahStok/', 'Admin_tambahUser/', 'Admin_transaksiKelas/', 'Admin_transaksiLain/', 'Owner_dataPeserta/', 'Owner_formUser/', 'Owner_kelolaUser/', 'Owner_dashboard/', 'Owner_pendaftaran/', 'Owner_transaksi/', 'Peserta_galeri/', 'Peserta_dashboard/']],
+
 			'toolbar',
 			//'honeypot'
 		],

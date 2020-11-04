@@ -67,12 +67,6 @@ class Login extends BaseController
   {
     $session = session();
     $session->destroy();
-    session()->setFlashdata('pesan', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        berhasil logout
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>');
     return redirect()->to('/');
   }
 }

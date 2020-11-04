@@ -11,16 +11,18 @@
     </div>
 
     <!-- Content Row -->
+
     <div class="row">
         <div class="col-md-12">
             <div class="jumbotron">
-                <h1 class="display-4">Hello, Nama Admin</h1>
+                <h1 class="display-4">Hello, <?= session()->get('nama'); ?></h1>
                 <p class="lead">
                     <?php date_default_timezone_set('Asia/Jakarta');
                     echo "" . date('l, d-M-Y');
                     ?></p>
             </div>
         </div>
+
 
         <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
