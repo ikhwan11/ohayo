@@ -33,6 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->get('/Admin_kelolaUser/edit/(:segment)', 'Admin_kelolaUser::edit/$1');
+$routes->delete('/Admin_kelolaUser/(:num)', 'Admin_kelolaUser::delete/$1');
+$routes->get('/Admin_kelolaUser/(:any)', 'Admin_kelolaUser::detail/$1');
 
 
 /**

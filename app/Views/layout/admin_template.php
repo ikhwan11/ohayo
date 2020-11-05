@@ -68,6 +68,7 @@
         </div>
     </div>
 
+
     <!-- Bootstrap core JavaScript-->
     <script src="/assets/admin_sb/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/admin_sb/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

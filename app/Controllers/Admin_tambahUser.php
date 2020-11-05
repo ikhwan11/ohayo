@@ -53,7 +53,7 @@ class Admin_tambahUser extends BaseController
         $data = array(
             'nama' => $this->request->getVar('nama'),
             'username' => $this->request->getVar('username'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            'password' => $this->request->getVar('password'),
             'level' => $this->request->getVar('level'),
         );
         $model = new UsersModel;

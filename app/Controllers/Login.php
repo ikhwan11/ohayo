@@ -37,6 +37,7 @@ class Login extends BaseController
         'nama' => $row->nama,
         'username' => $row->username,
         'level' => $row->level,
+        'foto' => $row->foto,
       );
       session()->set($data);
 
