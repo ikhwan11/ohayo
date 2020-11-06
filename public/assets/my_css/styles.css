@@ -33,3 +33,25 @@
   overflow: hidden;
 }
 /* end murid */
+
+/* form pendaftaran style */
+.tittle {
+  margin-top: 20px;
+  background-color: #4dbf1c;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.formulir {
+  margin-top: 20px;
+  background-color: #4dbf1c;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.judul {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin-top: 40px;
+}

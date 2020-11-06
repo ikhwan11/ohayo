@@ -50,44 +50,6 @@ class Admin_kelolaUser extends BaseController
 
     public function update($id)
     {
-        $usernameLama = $this->userModel->getUser($this->request->getVar('id'));
-        if ($usernameLama['username'] == $this->request->getVar('username')) {
-            $rule_username = 'required';
-        } else {
-            $rule_username = 'required|is_unique[users.username]';
-        }
-
-        if (!$this->validate([
-            'nama' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} wajib diisi'
-                ]
-            ],
-            'username' => [
-                'rules' => $rule_username,
-                'errors' => [
-                    'required' => '{field} wajib diisi.',
-                    'is_unique' => '{field} sudah dipakai.'
-                ]
-            ],
-            'password' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} wajib diisi'
-                ]
-            ],
-            'level' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} wajib diisi'
-                ]
-            ],
-        ])) {
-            $validation = \Config\Services::validation();
-
-            return redirect()->to('/Admin_kelolaUser/edit/' . $this->request->getVar('id'))->withInput()->with('validation', $validation);
-        }
 
         $this->userModel->save([
             'id' => $id,

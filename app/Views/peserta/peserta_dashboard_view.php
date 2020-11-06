@@ -6,7 +6,7 @@
     <div class="banner_inner d-flex align-items-center jumbotron jumbotron-murid">
         <div class="container">
             <div class="banner_content text-left">
-                <h3 style="color: #EF3660 ;">hi, Yoshiko !</h3>
+                <h3 style="color: #EF3660 ;">hi, <?= session()->get('nama'); ?> !</h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6" style="color: #EF3660 ;">

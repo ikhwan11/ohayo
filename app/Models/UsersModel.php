@@ -9,7 +9,7 @@ class UsersModel extends Model
     protected $table      = 'users';
     protected $primaryKey = 'id';
 
-    protected $allowedFields = ['foto', 'nama', 'username', 'password', 'level'];
+    protected $allowedFields = ['id', 'foto', 'nama', 'username', 'password', 'level'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

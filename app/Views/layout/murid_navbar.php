@@ -33,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="/Peserta_galeri">My Art</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Peserta_dailyActivity">My Activity</a></li>
                         <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yoshiko</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= session()->get('nama'); ?></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="#">Setting</a>
                                 <li class="nav-item"><a class="nav-link" href="login/keluar">Logout</a>

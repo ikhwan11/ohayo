@@ -20,12 +20,12 @@ class Login extends BaseController
     $row = $model->get_data_login($username, $table);
 
     if ($row == NULL) {
-      session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-            username salah
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>');
+      // session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+      //       username salah
+      //       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      //         <span aria-hidden="true">&times;</span>
+      //       </button>
+      //     </div>');
       return redirect()->to('/login/');
     }
 
@@ -56,7 +56,7 @@ class Login extends BaseController
       }
     }
     session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        password salah
+        username atau password salah
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
