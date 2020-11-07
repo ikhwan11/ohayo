@@ -9,7 +9,7 @@
             <?= session()->get('pesan'); ?>
         </div>
 
-        <table class="table table-hover table-striped table-bordered">
+        <table class="table table-hover table-striped table-bordered table-responsive">
             <thead>
                 <tr>
                     <th>No</th>
