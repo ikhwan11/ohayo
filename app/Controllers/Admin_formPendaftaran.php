@@ -8,9 +8,9 @@ class Admin_formPendaftaran extends BaseController
     {
         $corp = 'Admin |';
         $data = [
-            'tittle' => $corp . ' Form Pendaftaran'
+            'tittle' => $corp . ' Tambah peserta'
         ];
 
-        return view('admin/form_pendaftaran_view', $data);
+        return view('admin/formPendaftaranOf_view', $data);
     }
 }
