@@ -39,6 +39,11 @@ $routes->get('/Admin_kelolaUser/(:any)', 'Admin_kelolaUser::detail/$1');
 
 $routes->delete('/Admin_pendaftaran/(:num)', 'Admin_pendaftaran::delete/$1');
 
+$routes->delete('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::delete/$1');
+$routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::detail/$1');
+$routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_true/$1');
+$routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_false/$1');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

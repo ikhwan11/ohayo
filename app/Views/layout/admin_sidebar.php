@@ -48,7 +48,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="/Admin_dataPeserta">Data peserta</a>
                     <a class="collapse-item" href="/Admin_pendaftaran">Pendaftaran terbaru</a>
-                    <a class="collapse-item" href="/Admin_formPendaftaran">Tambah Peserta</a>
+                    <a class="collapse-item" href="/Admin_tambahPeserta">Tambah Peserta</a>
                 </div>
             </div>
         </li>

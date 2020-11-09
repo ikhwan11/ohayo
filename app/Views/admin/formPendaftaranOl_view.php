@@ -10,10 +10,10 @@
     </div>
     <div class="row">
         <div class="col">
-            <form action="/Admin_pendaftaran/update/<?= $pendaftaran['id_pendaftaran']; ?>" method="POST">
-                <?= csrf_field(); ?>
+            <form action="/Admin_tambahPeserta/simpan" method="POST">
                 <div class="form-group row">
                     <div class="col-md-6">
+
                         <label for="">Nama</label>
                         <input type="text" class="form-control form-control-user" id="nama" name="nama" value="<?= $pendaftaran['nama']; ?>"><br>
                         <label for="">Alamat</label>
@@ -61,7 +61,16 @@
                         </select> <br>
                     </div>
                 </div>
+                <label>Jenis paket kursus</label>
+                <select class="form-control" name="jenis_paket" id="jenis_paket">
+                    <option value="">== pilih Paket kursus==</option>
+                    <option value="12">3 bulan</option>
+                    <option value="24">6 bulan</option>
+
+                </select> <br>
+
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Tambah Data</button>
+
             </form>
         </div>
     </div>

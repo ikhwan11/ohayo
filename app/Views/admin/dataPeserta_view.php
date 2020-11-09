@@ -3,6 +3,7 @@
 <?= $this->section('content'); ?>
 
 <div class="container">
+    <?= session()->get('pesan'); ?>
     <div class="row">
         <div class="col">
             <h1>Data Murid Ohayo Drawing School</h1>
@@ -12,27 +13,37 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>disini field tabel</th>
-                    <th>Aksi</th>
+                    <th>Nama</th>
+                    <th>Usia</th>
+                    <th>Jenis Kelas</th>
+                    <th>Status</th>
+                    <th>Sisa Kelas</th>
+                    <th>Aksi </th>
+
                 </tr>
             </thead>
+            <?php $no = 1;
+            foreach ($peserta as $siswa) : ?>
+                <tbody>
+                    <tr>
+                        <td><?= $no++; ?></td>
+                        <td><?= $siswa['nama']; ?></td>
+                        <td><?= $siswa['usia']; ?></td>
+                        <td><?= $siswa['jenis_kursus']; ?></td>
+                        <td><?= $siswa['status']; ?></td>
+                        <td><?= $siswa['total_kelas']; ?></td>
+                        <td>
 
-            <tbody>
-                <tr>
+                            <a href="/Admin_dataPeserta/detail/<?= $siswa['id_peserta']; ?>" class="btn btn-success">Detail</a>
 
-                    <td><?php $no = 1;
-                        echo $no++; ?></td>
-                    <td>disini isi record table</td>
-                    <td>
-                        <a href="" class="btn btn-primary"><i class="fas fa-eye"></i></a>
-                        <a href="" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-            </tbody>
+                        </td>
+                    </tr>
+                </tbody>
+            <?php endforeach; ?>
         </table>
 
     </div>
 </div>
+
 
 <?= $this->endSection(); ?>
