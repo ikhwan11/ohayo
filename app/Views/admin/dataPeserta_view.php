@@ -9,6 +9,7 @@
             <h1>Data Murid Ohayo Drawing School</h1>
         </div>
 
+
         <table class="table table-hover table-striped table-bordered">
             <thead>
                 <tr>
@@ -22,7 +23,7 @@
 
                 </tr>
             </thead>
-            <?php $no = 1;
+            <?php $no = 1 + (6 * ($currentPage - 1));;
             foreach ($peserta as $siswa) : ?>
                 <tbody>
                     <tr>
@@ -42,6 +43,7 @@
             <?php endforeach; ?>
         </table>
 
+        <?= $pager->links('peserta', 'admin_pagination'); ?>
     </div>
 </div>
 

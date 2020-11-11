@@ -14,11 +14,14 @@ class Admin_kelolaUser extends BaseController
 
     public function index()
     {
-        $users = $this->userModel->findAll();
+        $currentPage = $this->request->getVar('page_peserta') ? $this->request->getVar('page_peserta') : 1;
+
         $corp = 'Admin |';
         $data = [
             'tittle' => $corp . ' Kelola User',
-            'users' => $users
+            'users' => $this->userModel->paginate(6, 'users'),
+            'pager' => $this->userModel->pager,
+            'currentPage'    => $currentPage
         ];
 
         return view('admin/kelolaUser_view', $data);
@@ -55,7 +58,7 @@ class Admin_kelolaUser extends BaseController
             'id' => $id,
             'nama' => $this->request->getVar('nama'),
             'username' => $this->request->getVar('username'),
-            'password' => $this->request->getVar('password'),
+            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             'level' => $this->request->getVar('level'),
         ]);
         session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">

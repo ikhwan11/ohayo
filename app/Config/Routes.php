@@ -44,6 +44,9 @@ $routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::detail/$1');
 $routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_true/$1');
 $routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_false/$1');
 
+$routes->get('/Admin_dashboard/(:num)', 'Admin_dashboard::absen/$1');
+$routes->get('/Admin_dashboard/(:num)', 'Admin_dashboard::absen_update/$1');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

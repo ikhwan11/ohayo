@@ -14,13 +14,13 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div class="jumbotron">
-                <h1 class="display-4">Hello, <?= session()->get('nama'); ?></h1>
-                <p class="lead">
-                    <?php date_default_timezone_set('Asia/Jakarta');
-                    echo "" . date('l, d-M-Y');
-                    ?></p>
-            </div>
+
+            <h1 class="display-4">Ohayou, <?= session()->get('nama'); ?></h1>
+            <p class="lead">
+                <?php date_default_timezone_set('Asia/Jakarta');
+                echo "" . date('l, d-M-Y');
+                ?></p>
+
         </div>
 
 
@@ -47,7 +47,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Peserta aktif</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $total; ?></div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $total_aktif; ?> orang</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-child fa-2x text-gray-300"></i>
@@ -63,8 +63,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">total peserta cuti</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">5 orang</div>
-
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $total_cuti; ?> orang</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
@@ -78,54 +77,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1>Form Absensi Murid</h1>
+                    <h1>Form Absensi Peserta</h1>
                     <hr>
-                    <form action="">
-                        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Ketik nama disini..." aria-label="Search" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
-                                    </button>
-                                </div>
+                    <?= session()->get('pesan'); ?>
+                    <form action="" method="POST" class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ketik nama disini..." name="keyword">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit" name="submit">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
                             </div>
-                        </form>
+                        </div>
                     </form>
-                </div>
-                <div class="col-md-6">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Nama Murid</h6>
-                        </div>
-                        <div class="card-body">
-                            <form action="">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <label for="">Jenis Kelas</label>
-                                        <input type="text" disabled value="" class="form-control form-control-user" id="" placeholder="">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="">Sisa Kelas</label>
-                                        <input type="text" disabled value="" class="form-control form-control-user" id="" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="switch-wrap d-flex justify-content-between">
-                                        <div class="primary-radio">
 
-                                            <input type="checkbox" id="default-radio">
-                                            <label for="default-radio">Check kehadiran</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <a type="submit" class="btn btn-primary" href="#">Submit</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
+
+                <table class="table table-hover table-striped table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>Nama Peserta</th>
+                            <th>Kelas</th>
+                            <th>Sisa kelas</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <?php foreach ($peserta as $p) : ?>
+                        <tbody>
+                            <tr>
+                                <td><?= $p['nama']; ?></td>
+                                <td><?= $p['jenis_kursus']; ?></td>
+                                <td><?= $p['total_kelas']; ?></td>
+                                <td>
+                                    <a href="/Admin_dashboard/absen/<?= $p['id_peserta']; ?>" class="btn btn-success btn-sm"><i class="fas fa-check-square"> Hadir </i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    <?php endforeach; ?>
+                </table>
+                <?= $pager->links('peserta', 'admin_pagination'); ?>
+
             </div>
         </div>
         <!-- end form absensi -->

@@ -1,0 +1,38 @@
+CRITICAL - 2020-11-10 21:52:59 --> DateTime::__construct(): Failed to parse time string (tanggal_lahir) at position 0 (t): The timezone could not be found in the database
+#0 C:\xampp\htdocs\ohayo\app\Views\admin\formPendaftaranOf_view.php(38): DateTime->__construct('tanggal_lahir')
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/formPenda...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_tambahPeserta.php(22): view('admin/formPenda...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_tambahPeserta->index()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_tambahPeserta))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-10 22:04:22 --> Empty statement is given for the field `Select`
+#0 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(506): CodeIgniter\Database\Exceptions\DataException::forEmptyInputGiven('Select')
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(481): CodeIgniter\Database\BaseBuilder->maxMinAvgSum('', '', 'COUNT')
+#2 C:\xampp\htdocs\ohayo\app\Models\pesertaModel.php(29): CodeIgniter\Database\BaseBuilder->selectCount()
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_dashboard.php(17): App\Models\PesertaModel->tot_aktif()
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_dashboard->index()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_dashboard))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-10 22:15:29 --> Too few arguments to function App\Models\PesertaModel::tot_aktif(), 0 passed in C:\xampp\htdocs\ohayo\app\Controllers\Admin_dashboard.php on line 17 and exactly 1 expected
+#0 C:\xampp\htdocs\ohayo\app\Controllers\Admin_dashboard.php(17): App\Models\PesertaModel->tot_aktif()
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_dashboard->index()
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_dashboard))
+#3 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-10 22:15:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\xampp\htdocs\ohayo\app\Controllers\Admin_dashboard.php(17): App\Models\PesertaModel->tot_aktif()
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_dashboard->index()
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_dashboard))
+#3 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

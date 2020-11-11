@@ -8,8 +8,8 @@
             <h1>Data User</h1>
             <?= session()->get('pesan'); ?>
         </div>
-
-        <table class="table table-hover table-striped table-bordered table-responsive">
+        <a href="/Admin_tambahUser" class="btn btn-primary mb-3 mr-3">Tambah user</a>
+        <table class="table table-hover table-striped table-bordered">
             <thead>
                 <tr>
                     <th>No</th>
@@ -22,7 +22,7 @@
             </thead>
 
             <tbody>
-                <?php $no = 1;
+                <?php $no = 1 + (6 * ($currentPage - 1));;
                 foreach ($users as $u) : ?>
                     <tr>
                         <td><?php
@@ -44,8 +44,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-
-        <a href="/Admin_tambahUser" class="btn btn-primary mb-3 mr-3">Tambah user</a>
+        <?= $pager->links('users', 'admin_pagination'); ?>
 
     </div>
 </div>

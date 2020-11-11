@@ -1,0 +1,19 @@
+CRITICAL - 2020-11-11 00:40:07 --> Undefined property: App\Controllers\Admin_kelolaUser::$pesertaModel
+#0 C:\xampp\htdocs\ohayo\app\Controllers\Admin_kelolaUser.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_kelolaUser->index()
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_kelolaUser))
+#3 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-11 02:46:11 --> Undefined variable: peserta
+#0 C:\xampp\htdocs\ohayo\app\Views\admin\formAbsensi_view.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/formAbsen...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_dashboard.php(47): view('admin/formAbsen...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_dashboard->absen('7')
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_dashboard))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}

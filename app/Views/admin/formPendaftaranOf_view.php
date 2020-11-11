@@ -34,9 +34,10 @@
                         <input type="text" class="form-control form-control-user" id="asal_sekolah" name="asal_sekolah" placeholder="Text here..."><br>
 
                         <label for="">Umur</label>
-                        <input type="text" class="form-control form-control-user" id="usia" name="usia"><br>
-                        <label>Jenis kelamin</label>
+                        <input type="text" class="form-control form-control-user" id="usia" name="usia" placeholder="Text here...">
+                        <br>
 
+                        <label>Jenis kelamin</label>
                         <select class="form-control" name="gender" id="gender">
                             <option value="disable">== pilih gender==</option>
                             <option value="">Laki-Laki</option>

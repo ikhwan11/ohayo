@@ -26,11 +26,16 @@ class PesertaModel extends Model
 
     public function tot_aktif()
     {
-        return $this->db->table('peserta')->countAll();
+        return $this->db->table('peserta')->where(['status' => 'aktif'])->countAllResults();
     }
 
     public function tot_cuti()
     {
-        return $this->db->table('peserta')->countAll();
+        return $this->db->table('peserta')->where(['status' => 'cuti'])->countAllResults();
+    }
+
+    public function search($keyword)
+    {
+        return $this->table('peserta')->like('nama', $keyword);
     }
 }
