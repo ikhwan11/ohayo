@@ -3,6 +3,7 @@
 <?= $this->section('content'); ?>
 
 <div class="container">
+    <?= session()->get('pesan'); ?>
     <div class="row">
         <div class="col">
             <h1>Data Transaksi</h1>
@@ -12,24 +13,26 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>disini field tabel</th>
-                    <th>Aksi</th>
+                    <th>Tanggal</th>
+                    <th>Jenis Transaksi</th>
+                    <th>Keterangan</th>
+                    <th>Total</th>
                 </tr>
             </thead>
-
-            <tbody>
-                <tr>
-
-                    <td><?php $no = 1;
-                        echo $no++; ?></td>
-                    <td>disini isi record table</td>
-                    <td>
-                        <a href="" class="btn btn-primary"><i class="fas fa-eye"></i></a>
-                    </td>
-                </tr>
-            </tbody>
+            <?php $no = 1 + (6 * ($currentPage - 1));
+            foreach ($transaksi as $t) : ?>
+                <tbody>
+                    <tr>
+                        <td><?= $no++; ?></td>
+                        <td><?= $t['created_at']; ?></td>
+                        <td><?= $t['jenis_transaksi']; ?></td>
+                        <td><?= $t['ket']; ?></td>
+                        <td><?= $t['total']; ?></td>
+                    </tr>
+                </tbody>
+            <?php endforeach; ?>
         </table>
-
+        <?= $pager->links('transaksi', 'admin_pagination'); ?>
     </div>
 </div>
 

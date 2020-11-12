@@ -16,7 +16,6 @@ class Admin_dataPeserta extends BaseController
   {
     $currentPage = $this->request->getVar('page_peserta') ? $this->request->getVar('page_peserta') : 1;
 
-
     $corp = 'Admin |';
     $data = [
       'tittle' => $corp . ' Data Peserta',

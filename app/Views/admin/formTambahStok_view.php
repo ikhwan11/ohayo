@@ -5,40 +5,21 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Form stok barang</h1>
+            <h1>Tambah Stok <?= $barang['nama_barang']; ?></h1>
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <form action="">
+        <div class="col-md-4">
+            <form action="/Admin_equipment/update_stok/<?= $barang['id_barang']; ?>">
+                <label for="nama">Stok Awal :</label>
+                <input type="number" class="form-control form-control-user " name="stok_awal" id="stok_awal" value="<?= $barang['jumlah_barang']; ?>" readonly><br>
 
-                <div class="form-group row">
-                    <div class="col-md-6">
+                <label for="nama">jumlah Stok yang ditambahkan :</label>
+                <input type="number" class="form-control form-control-user" name="stok_tambah" id="stok_tambah" value="" autofocus>
 
-                        <label for="">id barang</label>
-                        <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
-
-                        <label for="">nama barang</label>
-                        <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
-
-                        <label>jenis barang</label>
-                        <select class="form-control" name="">
-                            <option value="disable">== pilih jenis==</option>
-                            <option value="">Painting</option>
-                            <option value="">Drawing</option>
-                            <option value="">Crayon</option>
-
-                        </select> <br>
-
-                        <label for="">jumlah barang</label>
-                        <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
-
-                        <a href="" class="btn btn-primary btn-lg">Simpan</a>
-                    </div>
-
-                </div>
-            </form>
+                <button type="submit" class="btn btn-primary mt-3">Tambah Stok</button>
         </div>
+        </form>
     </div>
 </div>
 

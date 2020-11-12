@@ -23,7 +23,7 @@
 
                 </tr>
             </thead>
-            <?php $no = 1 + (6 * ($currentPage - 1));;
+            <?php $no = 1 + (6 * ($currentPage - 1));
             foreach ($peserta as $siswa) : ?>
                 <tbody>
                     <tr>

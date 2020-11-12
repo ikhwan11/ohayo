@@ -47,6 +47,11 @@ $routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_false/$1');
 $routes->get('/Admin_dashboard/(:num)', 'Admin_dashboard::absen/$1');
 $routes->get('/Admin_dashboard/(:num)', 'Admin_dashboard::absen_update/$1');
 
+$routes->get('/Admin_transaksiKelas/(:num)', 'Admin_dashboard::peserta_pilih/$1');
+
+$routes->delete('/Admin_equipment/(:num)', 'Admin_equipment::delete/$1');
+$routes->get('/Admin_equipment/(:num)', 'Admin_equipment::update_stok/$1');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

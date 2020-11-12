@@ -1,0 +1,66 @@
+CRITICAL - 2020-11-12 01:21:47 --> Column 'jumlah_barang' cannot be null
+#0 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ba...')
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\ohayo\app\Controllers\Admin_tambahStok.php(30): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_tambahStok->tambah()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_tambahStok))
+#9 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2020-11-12 01:41:38 --> Undefined property: App\Controllers\Admin_equipment::$pesertaModel
+#0 C:\xampp\htdocs\ohayo\app\Controllers\Admin_equipment.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_equipment->index()
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_equipment))
+#3 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-12 01:41:52 --> Undefined variable: stok
+#0 C:\xampp\htdocs\ohayo\app\Views\admin\equipment_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/equipment...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_equipment.php(26): view('admin/equipment...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_equipment->index()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_equipment))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-12 01:58:09 --> Undefined property: App\Controllers\Admin_equipment::$pesertaModel
+#0 C:\xampp\htdocs\ohayo\app\Controllers\Admin_equipment.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_equipment->index()
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_equipment))
+#3 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-12 02:53:38 --> Undefined index: nama_barang
+#0 C:\xampp\htdocs\ohayo\app\Views\admin\equipment_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/equipment...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_equipment.php(33): view('admin/equipment...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_equipment->index()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_equipment))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-12 03:28:58 --> Too few arguments to function App\Controllers\Admin_equipment::form_stok(), 0 passed in C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_equipment->form_stok()
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_equipment))
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-12 03:29:44 --> Too few arguments to function App\Controllers\Admin_equipment::form_stok(), 0 passed in C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_equipment->form_stok()
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_equipment))
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}

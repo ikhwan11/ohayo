@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\PesertaModel;
+use App\Models\TransaksiModel;
 
 class Admin_tambahPeserta extends BaseController
 {
@@ -37,6 +38,13 @@ class Admin_tambahPeserta extends BaseController
             'jenis_kursus' => $this->request->getVar('jenis_kursus'),
             'total_kelas' => (int)$this->request->getVar('jenis_paket'),
             'status' => 'aktif'
+        ]);
+
+        $transaksi = new TransaksiModel();
+        $transaksi->save([
+            'jenis_transaksi' => 'Transaksi masuk',
+            'total' => $this->request->getVar('total'),
+            'ket' => 'Transaksi awal registrasi'
         ]);
 
         session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">

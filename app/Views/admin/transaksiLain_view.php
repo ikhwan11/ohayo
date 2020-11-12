@@ -5,32 +5,30 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Transaksi</h1>
+            <h1>Transaksi Keluar</h1>
         </div>
-        <div class="row">
-            <div class="col">
-                <form action="">
-                    <div class="col-md-6">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <form action="/Admin_transaksiLain/tambah" method="POST">
 
-                        <div class="form-group row">
-                            <label for="">Jenis transaksi</label>
-                            <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
+                <div class="form-group row">
+                    <label>Keteranagan</label>
+                    <select class="form-control" name="ket" id="ket">
+                        <option value="">== Pilih keteranagan transaksi==</option>
+                        <option value="Pembelian modul, bag, dll">Pembelian ke pusat</option>
+                        <option value="Pembelian seragam">Pembelian seragam</option>
+                        <option value="Pembelian peralatan lukis">Pembelian peralatan lukis</option>
+                        <option value="Pembelian keperluan lain">Pembelian keperluan lain</option>
+                    </select> <br>
 
-                            <label for="">Tanggal Transaksi</label>
-                            <input type="date" class="form-control form-control-user" id="" placeholder="Text here..."><br>
+                    <label>Total transaksi</label>
+                    <input type="text" class="form-control form-control-user" id="total" name="total" placeholder="Text here...">
+                    <p>angka tidak boleh mengandung simbol dan tulisan</p><br>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg">Simpan Transaksi</button>
 
-                            <label for="">Nama toko</label>
-                            <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
-
-                            <label for="">Total transaksi</label>
-                            <input type="text" class="form-control form-control-user" id="" placeholder="Text here..."><br>
-                        </div>
-
-                        <a href="" class="btn btn-primary btn-lg">Simpan Transaksi</a>
-                    </div>
-
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 </div>

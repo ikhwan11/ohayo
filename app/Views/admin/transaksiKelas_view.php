@@ -10,37 +10,42 @@
     </div>
     <div class="row">
         <div class="col">
-            <form action="">
-                <div class="form-group row mt-2 ml-1">
-                    <form class="form-inline">
-                        <div class="form-group mb-2">
-                            <label>Nama atau id</label>
-                        </div>
-                        <div class="form-group mx-sm-3 mb-2">
-                            <input type="text" class="form-control" id="inputnama" placeholder="Text here..">
-                        </div>
-                        <button type="submit" class="btn btn-primary mb-2">cek peserta</button>
-                    </form>
 
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-md-6"><label>paket kelas</label>
-                        <select class="form-control" name="">
-                            <option value="disable">== pilih paket==</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-
-                        </select> <br>
-
-                        <label for="">Total</label>
-                        <input type="text" class="form-control form-control-user" id="" disabled value=""><br>
-                        <button type="submit" class="btn btn-primary btn-lg">Kofirmasi</button>
+            <form action="" method="POST" class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ketik nama disini..." name="keyword">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit" name="submit">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
                     </div>
-
                 </div>
             </form>
+            <table class="table table-hover table-striped table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Status</th>
+                        <th>Sisa kelas</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <?php foreach ($peserta as $p) : ?>
+                    <tbody>
+                        <tr>
+                            <td><?= $p['nama']; ?></td>
+                            <td><?= $p['status']; ?></td>
+                            <td><?= $p['total_kelas']; ?></td>
+                            <td>
+                                <a href="/Admin_transaksiKelas/peserta_pilih/<?= $p['id_peserta']; ?>" class="btn btn-success"><i class="fas fa-check-square"> Pilih </i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                <?php endforeach; ?>
+            </table>
+            <?= $pager->links('peserta', 'admin_pagination'); ?>
+
+
         </div>
     </div>
 </div>

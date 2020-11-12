@@ -69,6 +69,14 @@
 
                 </select> <br>
 
+                <label>Biaya registrasi</label>
+                <select class="form-control" name="total" id="total">
+                    <option value="">== pilih Paket kursus==</option>
+                    <option value="2300000">Rp. 2.300.000</option>
+                    <option value="4400000">Rp. 4.400.000</option>
+
+                </select> <br>
+
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Tambah Data</button>
 
             </form>

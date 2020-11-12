@@ -17,3 +17,25 @@ CRITICAL - 2020-11-11 02:46:11 --> Undefined variable: peserta
 #7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-11 21:47:27 --> Undefined index: nama
+#0 C:\xampp\htdocs\ohayo\app\Views\admin\transaksiKelas_view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/transaksi...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_transaksiKelas.php(31): view('admin/transaksi...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_transaksiKelas->index()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_transaksiKelas))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-11 21:53:06 --> Undefined variable: p
+#0 C:\xampp\htdocs\ohayo\app\Views\admin\transaksiKelasU_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/Transaksi...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Admin_transaksiKelas.php(41): view('admin/Transaksi...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin_transaksiKelas->peserta_pilih('7')
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin_transaksiKelas))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
