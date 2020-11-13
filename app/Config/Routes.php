@@ -52,6 +52,9 @@ $routes->get('/Admin_transaksiKelas/(:num)', 'Admin_dashboard::peserta_pilih/$1'
 $routes->delete('/Admin_equipment/(:num)', 'Admin_equipment::delete/$1');
 $routes->get('/Admin_equipment/(:num)', 'Admin_equipment::update_stok/$1');
 
+$routes->delete('/Admin_artikel/(:num)', 'Admin_artikel::delete/$1');
+$routes->get('/Admin_artikel/(:num)', 'Admin_artikel::detail/$1');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

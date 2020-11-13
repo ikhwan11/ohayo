@@ -60,7 +60,7 @@
             </a>
             <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/Admin_manajemenArtikel">Artikel</a>
+                    <a class="collapse-item" href="/Admin_artikel/manajemen_artikel">Artikel</a>
                     <a class="collapse-item" href="/Admin_event">Event</a>
                 </div>
             </div>

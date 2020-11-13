@@ -87,8 +87,6 @@
                                 <ul class="blog_meta list">
                                     <li><a href="#">nama admin<i class="lnr lnr-user"></i></a></li>
                                     <li><a href="#">tanggal<i class="lnr lnr-calendar-full"></i></a></li>
-                                    <li><a href="#">Views<i class="lnr lnr-eye"></i></a></li>
-                                    <li><a href="#">Comments<i class="lnr lnr-bubble"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -106,29 +104,7 @@
                         </div>
                     </article>
 
-                    <nav class="blog-pagination justify-content-center d-flex">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Previous">
-                                    <span aria-hidden="true">
-                                        <span class="lnr lnr-chevron-left"></span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a href="#" class="page-link">01</a></li>
-                            <li class="page-item"><a href="#" class="page-link">02</a></li>
-                            <li class="page-item"><a href="#" class="page-link">03</a></li>
-                            <li class="page-item"><a href="#" class="page-link">04</a></li>
-                            <li class="page-item"><a href="#" class="page-link">09</a></li>
-                            <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Next">
-                                    <span aria-hidden="true">
-                                        <span class="lnr lnr-chevron-right"></span>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+
                 </div>
             </div>
             <div class="col-lg-4">

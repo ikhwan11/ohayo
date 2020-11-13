@@ -1,6 +1,0 @@
-__ci_last_regenerate|i:1605166898;_ci_previous_url|s:37:"http://localhost:8080/Admin_equipment";log|b:1;nama|s:14:"fitriani sarah";username|s:7:"fitri11";level|s:5:"admin";foto|s:0:"";pesan|s:286:"<div class="alert alert-success alert-dismissible fade show" role="alert">
-        data barang berhasil ditambahkan
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>";__ci_vars|a:1:{s:5:"pesan";s:3:"old";}

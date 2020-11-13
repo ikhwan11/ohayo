@@ -1,6 +1,0 @@
-__ci_last_regenerate|i:1604814542;_ci_previous_url|s:37:"http://localhost:8080/Web_pendaftaran";pesan|s:320:"<div class="alert alert-success alert-dismissible fade show" role="alert">
-        pendaftaran berhasil silahkan konfimasi dan menghubungi admin kami
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>";__ci_vars|a:1:{s:5:"pesan";s:3:"old";}

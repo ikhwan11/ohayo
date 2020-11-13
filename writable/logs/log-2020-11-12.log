@@ -64,3 +64,14 @@ CRITICAL - 2020-11-12 03:29:44 --> Too few arguments to function App\Controllers
 #3 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+CRITICAL - 2020-11-12 23:59:00 --> Undefined variable: pager
+#0 C:\xampp\htdocs\ohayo\app\Views\costumer\landing_view.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 107, Array)
+#1 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('costumer/landin...', Array, true)
+#3 C:\xampp\htdocs\ohayo\app\Controllers\Home.php(15): view('costumer/landin...', Array)
+#4 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ohayo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ohayo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
