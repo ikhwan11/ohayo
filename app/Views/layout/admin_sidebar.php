@@ -62,6 +62,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="/Admin_artikel/manajemen_artikel">Artikel</a>
                     <a class="collapse-item" href="/Admin_event">Event</a>
+
                 </div>
             </div>
         </li>
@@ -76,6 +77,11 @@
             <a class="nav-link" href="/Admin_equipment">
                 <i class="fas fa-school"></i>
                 <span>Equipment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-school"></i>
+                <span>Feedback</span></a>
         </li>
 
 

@@ -85,4 +85,35 @@ class Admin_artikel extends BaseController
 
         return view('admin/detailArtikel_view', $data);
     }
+
+    public function edit($id)
+    {
+        $corp = 'Admin |';
+        $data = [
+            'tittle' => $corp . ' Edit Artikel',
+            'artikel' => $this->ArtikelModel->getData($id)
+        ];
+
+        return view('admin/formEditArtikel_view', $data);
+    }
+
+    public function update_artikel($id)
+    {
+        $this->ArtikelModel->save([
+            'id_artikel' => $id,
+            'nama_admin' => $this->request->getVar('nama_admin'),
+            'judul' => $this->request->getVar('judul'),
+            'kategori' => $this->request->getVar('kategori'),
+            'keterangan' => $this->request->getVar('keterangan'),
+            'isi' => $this->request->getVar('isi'),
+            'gambar' => $this->request->getVar('gambar'),
+        ]);
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        Artikel berhasil di update
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+        return redirect()->to('/Admin_artikel/manajemen_artikel');
+    }
 }

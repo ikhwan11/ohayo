@@ -54,6 +54,8 @@ $routes->get('/Admin_equipment/(:num)', 'Admin_equipment::update_stok/$1');
 
 $routes->delete('/Admin_artikel/(:num)', 'Admin_artikel::delete/$1');
 $routes->get('/Admin_artikel/(:num)', 'Admin_artikel::detail/$1');
+$routes->get('/Admin_artikel/edit/(:segment)', 'Admin_artikel::edit/$1');
+$routes->get('/Admin_artikel/(:num)', 'Admin_artikel::update_artikel/$1');
 
 /**
  * --------------------------------------------------------------------

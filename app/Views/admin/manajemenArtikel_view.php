@@ -52,7 +52,7 @@
                             <td><?= $a['kategori']; ?></td>
                             <td><?= $a['created_at']; ?></td>
                             <td>
-                                <a href="" class="btn btn-warning">Edit</a>
+                                <a href="/Admin_artikel/edit/<?= $a['id_artikel']; ?>" class="btn btn-warning">Edit</a>
                                 <a href="" class="btn btn-danger" data-toggle="modal" data-target="#hapusArtikelModal">Hapus</a>
                                 <a href="/Admin_artikel/detail/<?= $a['id_artikel']; ?>" class="btn btn-success mt-3">Preview</a>
                             </td>

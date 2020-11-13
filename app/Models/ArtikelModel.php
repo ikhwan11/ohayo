@@ -15,6 +15,7 @@ class ArtikelModel extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
+
     public function getData($id = false)
     {
         if ($id == false) {

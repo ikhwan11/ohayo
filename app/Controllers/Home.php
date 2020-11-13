@@ -2,18 +2,21 @@
 
 namespace App\Controllers;
 
+use App\Models\ArtikelModel;
+
 class Home extends BaseController
 {
 	public function index()
 	{
-		// $currentPage = $this->request->getVar('page_artikel') ? $this->request->getVar('page_artikel') : 1;
+		$ArtikelModel = new ArtikelModel();
 
 		$corp = 'Ohayo |';
 		$data = [
 			'tittle' => $corp . ' Beranda',
-			// 'artikel' => $this->pesertaModel->paginate(6, 'peserta'),
-			// 'pager' => $this->pesertaModel->pager,
-			// 'currentPage'    => $currentPage
+			'artikel' => $ArtikelModel->paginate(4, 'artikel'),
+			'pager' => $ArtikelModel->pager,
+
+
 		];
 
 		return view('costumer/landing_view', $data);
