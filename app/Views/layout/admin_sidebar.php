@@ -32,9 +32,9 @@
             </a>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/Admin_dataTransaksi">Data transaksi</a>
-                    <a class="collapse-item" href="/Admin_transaksiKelas">Tambah kelas</a>
-                    <a class="collapse-item" href="/Admin_transaksiLain">Transaksi lain</a>
+                    <a class="collapse-item" href="/Admin_kelolaTransaksi">Data transaksi</a>
+                    <a class="collapse-item" href="/Admin_kelolaTransaksi/tambah_kelas">Tambah kelas</a>
+                    <a class="collapse-item" href="/Admin_kelolaTransaksi/transaksi_lain">Transaksi lain</a>
                 </div>
             </div>
         </li>
@@ -46,9 +46,9 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/Admin_dataPeserta">Data peserta</a>
-                    <a class="collapse-item" href="/Admin_pendaftaran">Pendaftaran terbaru</a>
-                    <a class="collapse-item" href="/Admin_tambahPeserta">Tambah Peserta</a>
+                    <a class="collapse-item" href="/Admin_kelolaPeserta">Data peserta</a>
+                    <a class="collapse-item" href="/Admin_kelolaPeserta/pendaftaran">Pendaftaran terbaru</a>
+                    <a class="collapse-item" href="/Admin_kelolaPeserta/tambah_peserta">Tambah Peserta</a>
                 </div>
             </div>
         </li>
@@ -60,8 +60,8 @@
             </a>
             <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/Admin_artikel/manajemen_artikel">Artikel</a>
-                    <a class="collapse-item" href="/Admin_event">Event</a>
+                    <a class="collapse-item" href="/Admin_kelolaWebsite/manajemen_artikel">Artikel</a>
+                    <a class="collapse-item" href="/Admin_kelolaWebsite/event">Event</a>
 
                 </div>
             </div>

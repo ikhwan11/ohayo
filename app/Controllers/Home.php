@@ -13,7 +13,7 @@ class Home extends BaseController
 		$corp = 'Ohayo |';
 		$data = [
 			'tittle' => $corp . ' Beranda',
-			'artikel' => $ArtikelModel->paginate(4, 'artikel'),
+			'artikel' => $ArtikelModel->paginate(3, 'artikel'),
 			'pager' => $ArtikelModel->pager,
 
 

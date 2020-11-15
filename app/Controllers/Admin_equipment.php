@@ -30,7 +30,7 @@ class Admin_equipment extends BaseController
             'currentPage'    => $currentPage
         ];
 
-        return view('admin/equipment_view', $data);
+        return view('admin/barang/equipment_view', $data);
     }
 
     public function tambah_stok()
@@ -40,7 +40,7 @@ class Admin_equipment extends BaseController
             'tittle' => $corp . ' Tambah merk barang'
         ];
 
-        return view('admin/formTambahBarang_view', $data);
+        return view('admin/barang/formTambahBarang_view', $data);
     }
 
     public function tambah_stok_form($id)
@@ -51,7 +51,7 @@ class Admin_equipment extends BaseController
             'barang' => $this->BarangModel->getData($id)
         ];
 
-        return view('admin/formTambahStok_view', $data);
+        return view('admin/barang/formTambahStok_view', $data);
     }
 
     public function update_stok($id)
@@ -84,7 +84,7 @@ class Admin_equipment extends BaseController
           <span aria-hidden="true">&times;</span>
         </button>
       </div>');
-        return redirect()->to('/Admin_equipment/tambah_stok');
+        return redirect()->to('/Admin_equipment/barang/tambah_stok');
     }
 
     public function delete($id)

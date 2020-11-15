@@ -35,19 +35,19 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/Admin_kelolaUser/edit/(:segment)', 'Admin_kelolaUser::edit/$1');
 $routes->delete('/Admin_kelolaUser/(:num)', 'Admin_kelolaUser::delete/$1');
-$routes->get('/Admin_kelolaUser/(:any)', 'Admin_kelolaUser::detail/$1');
+$routes->get('/Admin_kelolaUser/(:num)', 'Admin_kelolaUser::detail/$1');
 
-$routes->delete('/Admin_pendaftaran/(:num)', 'Admin_pendaftaran::delete/$1');
-
-$routes->delete('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::delete/$1');
-$routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::detail/$1');
-$routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_true/$1');
-$routes->get('/Admin_dataPeserta/(:num)', 'Admin_dataPeserta::cuti_false/$1');
+$routes->delete('/Admin_kelolaUser/(:num)', 'Admin_pendaftaran::delete_pendaftaran/$1');
+$routes->delete('/Admin_kelolaPeserta/(:num)', 'Admin_kelolaPeserta::delete/$1');
+$routes->get('/Admin_kelolaPeserta/(:num)', 'Admin_kelolaPeserta::detail/$1');
+$routes->get('/Admin_kelolaPeserta/(:num)', 'Admin_kelolaPeserta::cuti_true/$1');
+$routes->get('/Admin_kelolaPeserta/(:num)', 'Admin_kelolaPeserta::cuti_false/$1');
+$routes->get('/Admin_kelolaPeserta/(:num)', 'Admin_kelolaPeserta::update/$1');
 
 $routes->get('/Admin_dashboard/(:num)', 'Admin_dashboard::absen/$1');
 $routes->get('/Admin_dashboard/(:num)', 'Admin_dashboard::absen_update/$1');
 
-$routes->get('/Admin_transaksiKelas/(:num)', 'Admin_dashboard::peserta_pilih/$1');
+$routes->get('/Admin_kelolaTransaksi/(:num)', 'kelolaTransaksi::peserta_pilih/$1');
 
 $routes->delete('/Admin_equipment/(:num)', 'Admin_equipment::delete/$1');
 $routes->get('/Admin_equipment/(:num)', 'Admin_equipment::update_stok/$1');
