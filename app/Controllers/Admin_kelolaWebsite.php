@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\ArtikelModel;
+use App\Models\EventModel;
 
 class Admin_kelolaWebsite extends BaseController
 {
@@ -10,6 +11,7 @@ class Admin_kelolaWebsite extends BaseController
     public function __construct()
     {
         $this->ArtikelModel = new ArtikelModel();
+        $this->EventModel = new EventModel();
     }
 
     public function index()
@@ -93,7 +95,7 @@ class Admin_kelolaWebsite extends BaseController
           <span aria-hidden="true">&times;</span>
         </button>
       </div>');
-        return redirect()->to('/Admin_kelolaWebsite/artikel/manajemen_artikel');
+        return redirect()->to('/Admin_kelolaWebsite/manajemen_artikel');
     }
 
     public function delete($id)
@@ -113,7 +115,7 @@ class Admin_kelolaWebsite extends BaseController
             <span aria-hidden="true">&times;</span>
           </button>
         </div>');
-        return redirect()->to('/Admin_kelolaWebsite/artikel/manajemen_artikel');
+        return redirect()->to('/Admin_kelolaWebsite/manajemen_artikel');
     }
 
     public function detail($id)
@@ -155,23 +157,36 @@ class Admin_kelolaWebsite extends BaseController
           <span aria-hidden="true">&times;</span>
         </button>
       </div>');
-        return redirect()->to('/Admin_kelolaWebsite/artikel/manajemen_artikel');
+        return redirect()->to('/Admin_kelolaWebsite/manajemen_artikel');
     }
+
+    // bagian event
 
     public function event()
     {
+        $keyword = $this->request->getVar('keyword');
+        if ($keyword) {
+            $Event = $this->EventModel->search($keyword);
+        } else {
+            $Event = $this->EventModel;
+        }
+
         $corp = 'Admin |';
         $data = [
-            'tittle' => $corp . ' Daftar Event'
+            'tittle' => $corp . ' Daftar Event',
+            'event' => $Event->findAll()
         ];
 
         return view('admin/event/event_view', $data);
     }
     public function buat_event()
     {
+
         $corp = 'Admin |';
         $data = [
-            'tittle' => $corp . ' Buat Event'
+            'tittle' => $corp . ' Buat Event',
+            'validation' => \Config\Services::validation(),
+
         ];
 
         return view('admin/event/formBuatEvent_view', $data);
@@ -179,5 +194,194 @@ class Admin_kelolaWebsite extends BaseController
 
     public function submit_event()
     {
+        if (!$this->validate([
+            'judul_event' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ], 'tanggal_acara' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'tempat_acara' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'limit_peserta' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'kategori_acara' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'biaya' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'banner' => [
+                'rules' => 'max_size[banner,1024]|is_image[banner]|mime_in[banner,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'ukuran gambar terlalu besar',
+                    'is_image' => 'yang anda pilih bukan gambar',
+                    'max_size' => 'ukuran gambar terlalu besar',
+                    'mime_in' => 'yang anda pilih bukan gambar',
+                ]
+            ]
+        ])) {
+
+            return redirect()->to('/Admin_kelolaWebsite/buat_event')->withInput();
+        }
+
+        $fileBanner = $this->request->getFile('banner');
+
+        if ($fileBanner->getError() == 4) {
+            $namaBanner = 'default_event.jpg';
+        } else {
+
+            $namaBanner = $fileBanner->getRandomName();
+
+            $fileBanner->move('img/banner_event', $namaBanner);
+        }
+
+        $this->EventModel->save([
+            'judul_event' => $this->request->getVar('judul_event'),
+            'tanggal_acara' => $this->request->getVar('tanggal_acara'),
+            'tempat_acara' => $this->request->getVar('tempat_acara'),
+            'ket' => $this->request->getVar('ket'),
+            'limit_peserta' => (int)$this->request->getVar('limit_peserta'),
+            'kategori_acara' => $this->request->getVar('kategori_acara'),
+            'biaya' => $this->request->getVar('biaya'),
+            'detail_acara' => $this->request->getVar('detail_acara'),
+            'status' => 'aktif',
+            'banner' => $namaBanner
+        ]);
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        Event berhasil di buat
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+        return redirect()->to('/Admin_kelolaWebsite/event');
+    }
+
+    public function detail_event($id)
+    {
+        $corp = 'Admin |';
+        $data = [
+            'tittle' => $corp . ' Detail Event',
+            'event' => $this->EventModel->getData($id)
+
+        ];
+
+        return view('admin/event/detailEvent_view', $data);
+    }
+
+    public function delete_event($id)
+    {
+        $banner = $this->EventModel->find($id);
+
+        if ($banner['banner'] != 'default_event.jpg') {
+
+            unlink('img/banner_event/' . $banner['banner']);
+        }
+
+        $this->EventModel->delete($id);
+        session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+          Event berhasil dihapus
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>');
+        return redirect()->to('/Admin_kelolaWebsite/event');
+    }
+
+    public function edit_event($id)
+    {
+        $corp = 'Admin |';
+        $data = [
+            'tittle' => $corp . ' Edit Event',
+            'event' => $this->EventModel->getData($id),
+            'validation' => \Config\Services::validation()
+        ];
+
+        return view('admin/event/formEditEvent_view', $data);
+    }
+
+    public function update_event($id)
+    {
+        if (!$this->validate([
+            'judul_event' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ], 'tanggal_acara' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'tempat_acara' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'limit_peserta' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'kategori_acara' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+            'biaya' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
+
+        ])) {
+
+            return redirect()->to('/Admin_kelolaWebsite/buat_event')->withInput();
+        }
+
+
+        $this->EventModel->save([
+            'id_event' => $id,
+            'judul_event' => $this->request->getVar('judul_event'),
+            'tanggal_acara' => $this->request->getVar('tanggal_acara'),
+            'tempat_acara' => $this->request->getVar('tempat_acara'),
+            'ket' => $this->request->getVar('ket'),
+            'limit_peserta' => (int)$this->request->getVar('limit_peserta'),
+            'kategori_acara' => $this->request->getVar('kategori_acara'),
+            'biaya' => $this->request->getVar('biaya'),
+            'detail_acara' => $this->request->getVar('detail_acara'),
+            'status' => 'aktif',
+        ]);
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        Event berhasil di update
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+        return redirect()->to('/Admin_kelolaWebsite/event');
     }
 }

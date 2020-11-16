@@ -120,23 +120,6 @@
             }
 
         }
-
-        function previewImgThumb() {
-
-            const thumb = document.querySelector('#thumb');
-            const thumbLabel = document.querySelector('.a');
-            const imgThumb = document.querySelector('.b');
-
-            fotoLabel.textContent = foto.files[0].name;
-
-            const filefoto = new FileReader();
-            filefoto.readAsDataURL(foto.files[0]);
-
-            filefoto.onload = function(e) {
-                imgThumb.src = e.target.result;
-            }
-
-        }
     </script>
 
 </body>

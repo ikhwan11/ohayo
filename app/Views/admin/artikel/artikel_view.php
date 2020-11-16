@@ -15,7 +15,7 @@
                 <div class="form-group row">
                     <div class="col-md-6">
                         <label for="">Input Judul</label>
-                        <input type="text" class="form-control form-control-user" id="nama_admin" name="nama_admin" placeholder="Text here..." value="<?= session()->get('nama'); ?>" hidden><br>
+                        <input type="text" class="form-control form-control-user" id="nama_admin" name="nama_admin" placeholder="Text here..." hidden><br>
 
                         <input type="text" class="form-control form-control-user <?= ($validation->hasError('judul')) ? 'is-invalid' : ''; ?>" id="judul" name="judul" value="<?= old('judul'); ?>" autofocus placeholder="Text here...">
                         <div class="invalid-feedback">
@@ -61,4 +61,7 @@
                 <button type="submit" href="" class="btn btn-primary btn-lg btn-block">Submit</button>
             </form>
             <a href="/Admin_kelolaWebsite/manajemen_artikel" class="btn btn-warning mt-3">
-                << Manajemen Artikel</a> </div> </div> </div> <?= $this->endSection(); ?>
+                Manajemen Artikel</a>
+        </div>
+    </div>
+</div> <?= $this->endSection(); ?>
