@@ -4,18 +4,24 @@ namespace App\Controllers;
 
 use App\Models\ArtikelModel;
 
+
 class Home extends BaseController
 {
+
+	protected $ArtikelModel;
+	public function __construct()
+	{
+		$this->ArtikelModel = new ArtikelModel();
+	}
+
 	public function index()
 	{
-		$ArtikelModel = new ArtikelModel();
 
 		$corp = 'Ohayo |';
 		$data = [
 			'tittle' => $corp . ' Beranda',
-			'artikel' => $ArtikelModel->paginate(3, 'artikel'),
-			'pager' => $ArtikelModel->pager,
-
+			'artikel' => $this->ArtikelModel->paginate(3, 'artikel'),
+			'pager' => $this->ArtikelModel->pager,
 
 		];
 

@@ -62,6 +62,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="/Admin_kelolaWebsite/manajemen_artikel">Artikel</a>
                     <a class="collapse-item" href="/Admin_kelolaWebsite/event">Event</a>
+                    <a class="collapse-item" href="/Admin_kelolaWebsite/weekly_data">Weekly Art</a>
 
                 </div>
             </div>

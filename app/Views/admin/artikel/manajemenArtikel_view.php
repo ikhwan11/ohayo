@@ -16,12 +16,9 @@
                 <div class="input-group">
                     <select class="form-control" name="keyword" id="keyword">
                         <option value="disable">Cari kategori artikel..</option>
-                        <option value="Art">Art</option>
-                        <option value="Painting">Painting</option>
-                        <option value="Manga">Manga</option>
-                        <option value="Anime">Anime</option>
-                        <option value="Event">Event</option>
-                        <option value="News">News</option>
+                        <?php foreach ($kategori as $kat) : ?>
+                            <option value="<?= $kat['nama_kategori']; ?>"><?= $kat['nama_kategori']; ?></option>
+                        <?php endforeach; ?>
                     </select> <br>
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit" name="submit">
@@ -63,6 +60,7 @@
         </div>
     </div>
     <a href="/Admin_kelolaWebsite" class="btn btn-primary mb-3 mr-3">Tambah Artikel Baru</a>
+    <a href="/Admin_kelolaWebsite/tambah_kategori" class="btn btn-success mb-3 mr-3">Tambah kategori post</a>
 </div>
 
 

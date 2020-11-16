@@ -30,7 +30,7 @@
                     <div class="categories_details">
                         <div class="categories_text">
                             <a href="#">
-                                <h5>Daily Art</h5>
+                                <h5>Weekly Art</h5>
                             </a>
                             <div class="border_line"></div>
                             <p>Karya terbaik minggu ini</p>
@@ -81,7 +81,7 @@
                     <?php foreach ($artikel as $a) : ?>
                         <article class="row blog_item">
                             <div class="col-md-3">
-                                <div class="blog_info text-left">
+                                <div class="blog_info text-right">
                                     <div class="post_tag">
                                         <p><?= $a['kategori']; ?></p>
                                     </div>
@@ -102,7 +102,7 @@
                                             <h2><?= $a['judul']; ?></h2>
                                         </a>
                                         <p><?= $a['keterangan']; ?></p>
-                                        <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        <a href="" class="white_bg_btn">View More</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,36 +113,20 @@
             </div>
             <div class="col-lg-4">
                 <div class="blog_right_sidebar">
-                    <aside class="single_sidebar_widget search_widget">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Posts">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
-                            </span>
-                        </div><!-- /input-group -->
-                        <div class="br"></div>
-                    </aside>
 
                     <aside class="single_sidebar_widget post_category_widget">
                         <h4 class="widget_title">Post Catgories</h4>
                         <ul class="list cat-list">
                             <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Painting</p>
-                                    <p>37</p>
-                                </a>
+                                <?php foreach ($artikel as $a) : ?>
+                                    <a href="#"><?= $a['kategori']; ?></a>
+                                <?php endforeach ?>
                             </li>
 
                         </ul>
                         <div class="br"></div>
                     </aside>
 
-                    <aside class="single-sidebar-widget tag_cloud_widget">
-                        <h4 class="widget_title">Tag Clouds</h4>
-                        <ul class="list">
-                            <li><a href="#">Painting</a></li>
-                        </ul>
-                    </aside>
                 </div>
             </div>
         </div>
@@ -159,7 +143,7 @@
             <p>Ini adalah kelas kursus di ohayo drawing school batam</p>
         </div>
         <div class="row courses_inner">
-            <div class="col-lg-9 ">
+            <div class="col">
                 <div class="grid_inner">
                     <div class="grid_item wd55">
                         <div class="courses_item">
