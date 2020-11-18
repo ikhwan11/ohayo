@@ -29,7 +29,7 @@
                     <img src="/assets/ohayo_item/daily_art.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
-                            <a href="#">
+                            <a href="/Web_weeklyArt/">
                                 <h5>Weekly Art</h5>
                             </a>
                             <div class="border_line"></div>
@@ -173,9 +173,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid_item wd44">
+                    <div class="grid_item wd55">
                         <div class="courses_item">
-                            <img src="/assets/ohayo_item/crayon_class.jpg" alt="">
+                            <img src="/assets/ohayo_item/crayon.jpg" alt="">
                             <div class="hover_text">
                                 <a class="cat" href="/Web_courseCrayon">Detail</a>
                                 <a href="#">
@@ -187,13 +187,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid_item wd55">
+                    <div class="grid_item wd44">
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/digitalart_class.jpg" alt="">
                             <div class="hover_text">
                                 <a class="cat" href="/Web_courseDigital">Detail</a>
                                 <a href="#">
-                                    <h4>Manga Digital Art Class</h4>
+                                    <h4>Digital Art Class</h4>
                                 </a>
                                 <ul class="list">
                                     <li><a href="#"><i class="lnr lnr-user"></i> coach name</a></li>

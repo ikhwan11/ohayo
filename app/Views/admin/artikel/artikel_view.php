@@ -37,12 +37,9 @@
                         <label class="mt-3">Kategori Artikel</label>
                         <select class="form-control" name="kategori" id="kategori">
                             <option value="">== pilih kategori Artikel==</option>
-                            <option value="Art">Art</option>
-                            <option value="Painting">Painting</option>
-                            <option value="Manga">Manga</option>
-                            <option value="Anime">Anime</option>
-                            <option value="Event">Event</option>
-                            <option value="News">News</option>
+                            <?php foreach ($kategori as $k) : ?>
+                                <option value="<?= $k['nama_kategori']; ?>"><?= $k['nama_kategori']; ?></option>
+                            <?php endforeach; ?>
                         </select>
                     </div>
                     <div class="col-md-6">

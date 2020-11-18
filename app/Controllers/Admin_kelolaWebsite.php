@@ -23,7 +23,8 @@ class Admin_kelolaWebsite extends BaseController
         $corp = 'Admin |';
         $data = [
             'tittle' => $corp . ' Artikel',
-            'validation' => \Config\Services::validation()
+            'validation' => \Config\Services::validation(),
+            'kategori' => $this->KategoriArtikelModel->findAll()
         ];
 
         return view('admin/artikel/artikel_view', $data);
@@ -463,6 +464,12 @@ class Admin_kelolaWebsite extends BaseController
                     'required' => '{field} wajib diisi'
                 ]
             ],
+            'kelas' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi'
+                ]
+            ],
             'banner' => [
                 'rules' => 'max_size[banner,1024]|is_image[banner]|mime_in[banner,image/jpg,image/jpeg,image/png]',
                 'errors' => [
@@ -491,6 +498,8 @@ class Admin_kelolaWebsite extends BaseController
             'nama_peserta' => $this->request->getVar('nama_peserta'),
             'judul_karya' => $this->request->getVar('judul_karya'),
             'umur' => $this->request->getVar('umur'),
+            'keterangan' => $this->request->getVar('keterangan'),
+            'kelas' => $this->request->getVar('kelas'),
             'gambar' => $namaBanner
         ]);
 
@@ -512,5 +521,35 @@ class Admin_kelolaWebsite extends BaseController
         ];
 
         return view('admin/weekly_art/weeklyData_view', $data);
+    }
+
+    public function weekly_detail($id)
+    {
+        $corp = 'Admin |';
+        $data = [
+            'tittle' => $corp . ' Detail',
+            'art' => $this->WeeklyModel->find($id)
+        ];
+
+        return view('admin/weekly_art/weeklyDetail_view', $data);
+    }
+
+    public function delete_weekly($id)
+    {
+        $banner = $this->WeeklyModel->find($id);
+
+        if ($banner['gambar'] != 'weekly_default.jpg') {
+
+            unlink('img/weekly_art/' . $banner['gambar']);
+        }
+
+        $this->WeeklyModel->delete($id);
+        session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+          Post berhasil dihapus
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>');
+        return redirect()->to('/Admin_kelolaWebsite/weekly_data');
     }
 }

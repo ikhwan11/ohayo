@@ -28,8 +28,21 @@
                 </div>
                 <br>
 
+                <label class="mt-3">Kelas</label>
+                <select class="form-control <?= ($validation->hasError('kelas')) ? 'is-invalid' : ''; ?>" name="kelas" id="kelas">
+                    <option value="">== pilih kelas==</option>
+                    <option value="Painting">Painting</option>
+                    <option value="Digital Art">Digital Art</option>
+                    <option value="Manga">Manga</option>
+                    <option value="Crayon">Crayon</option>
+
+                </select>
+                <div class="invalid-feedback">
+                    <?= $validation->getError('kelas'); ?>
+                </div><br>
+
                 <label>Umur</label>
-                <input type="number" class="form-control form-control-user <?= ($validation->hasError('umur')) ? 'is-invalid' : ''; ?>" name="umur" id="umur" placeholder="Text here..." value="<?= old('umur'); ?>" autofocus>
+                <input type="text" class="form-control form-control-user <?= ($validation->hasError('umur')) ? 'is-invalid' : ''; ?>" name="umur" id="umur" placeholder="Text here..." value="<?= old('umur'); ?>" autofocus>
                 <div class="invalid-feedback">
                     <?= $validation->getError('umur'); ?>
                 </div>

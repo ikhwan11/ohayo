@@ -1,0 +1,6 @@
+__ci_last_regenerate|i:1605685445;_ci_previous_url|s:51:"http://localhost:8080/Admin_kelolaWebsite/weeklyArt";log|b:1;nama|s:14:"Fitriani sarah";username|s:7:"fitri11";level|s:5:"admin";foto|s:35:"1605427130_d33ce510936dad6be2e8.jpg";pesan|s:288:"<div class="alert alert-success alert-dismissible fade show" role="alert">
+        Weekly art post berhasil di submit
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>";__ci_vars|a:1:{s:5:"pesan";s:3:"old";}
