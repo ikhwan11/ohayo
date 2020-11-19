@@ -10,24 +10,39 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
-            <div class="carousel-caption">
-                <h1 style="color: #EF3660 ;">Painting Class</h1>
-                <p style="color: #EF3660 ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam alias provident repellat animi vitae eveniet vel quos dolorum! Aliquid quae qui molestias deserunt rerum praesentium quod expedita illo quam corrupti!</p>
+            <img src="/assets/ohayo_item/painting-1.jpg" class="tales" alt="...">
+            <div class="carousel-caption text-left">
+                <div class="col">
+                    <h1>Painting Class</h1>
+                </div>
+
+                <div class="col-md-6">
+                    <p>Siapa yang tidak tahu dengan painting? painting adalah seni rupa murni yang paling tua. semua orang menyukai keindahan corak warna-warni dari painting. selain itu painting juga mampu memberikan ketenangan jiwa.</p>
+                </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
-            <div class="carousel-caption">
-                <h1 style="color: #EF3660 ;">Open your imagination and artistic soul</h1>
-                <p style="color: #EF3660 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur debitis autem sunt unde quam excepturi quaerat distinctio, id vel sit repellendus, ipsum accusantium iusto maxime eaque quisquam impedit assumenda?</p>
+            <img src="/assets/ohayo_item/painting-2.jpg" class="tales" alt="...">
+            <div class="carousel-caption text-left">
+                <div class="col">
+                    <h1>Awaken your artistic soul</h1>
+                </div>
+
+                <div class="col-md-6">
+                    <p>Setiap individu memiliki gaya dan prespektif masing-masing. kadang kita tidak menyadari bahwa dirikita memiliki potensi seni yang perlu dikembangkan.</p>
+                </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
-            <div class="carousel-caption">
-                <h1 style="color: #EF3660 ;">Pour your emotions with a mix of colors</h1>
-                <p style="color: #EF3660 ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos distinctio est nesciunt! Ipsa doloremque modi dolorum a minima et impedit dicta quibusdam officia, minus doloribus quaerat ullam, ad debitis.</p>
+            <img src="/assets/ohayo_item/painting-3.jpg" class="tales" alt="...">
+            <div class="carousel-caption text-left">
+                <div class="col">
+                    <h1>Color your day</h1>
+                </div>
+
+                <div class="col-md-6">
+                    <p>Jadikan harimu lebih berwarna bersama kami. dengan coach yang sudah teruji dan berpengalaman di bidang seni lukis.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -47,14 +62,11 @@
         <div class="row course_details_inner">
             <div class="col-lg-8">
                 <div class="c_details_img">
-                    <img class="img-fluid" src="/assets/learnit_templates/img/courses/course-details.jpg" alt="">
+                    <img class="img-fluid" src="/assets/ohayo_item/painting_kursus.jpg" alt="">
                 </div>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link" id="kelas-tab" data-toggle="tab" href="#kelas" role="tab" aria-controls="home" aria-selected="true">Kelas Manga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tentang-tab" data-toggle="tab" href="#tentang" role="tab" aria-controls="profile" aria-selected="false">Tentang Kursus</a>
+                        <a class="nav-link" id="kelas-tab" data-toggle="tab" href="#kelas" role="tab" aria-controls="home" aria-selected="true">Kelas <?= $painting->nama_kelas; ?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="equip-tab" data-toggle="tab" href="#equip" role="tab" aria-controls="contact" aria-selected="false">Drawing Equipment</a>
@@ -67,18 +79,15 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade" id="kelas" role="tabpanel" aria-labelledby="kelas-tab">
                         <div class="objctive_text">
-                            <p>di dalam berupa foto dan keterangan singkat</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tentang" role="tabpanel" aria-labelledby="tentang-tab">
-                        <div class="objctive_text">
-                            <p>tentang jenis kelas</p>
+                            <p><?= $painting->tentang; ?></p>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="equip" role="tabpanel" aria-labelledby="equip-tab">
                         <div class="objctive_text">
                             <ul class="list">
-                                <li>List Alat</li>
+                                <?php foreach ($paintingg as $paint) : ?>
+                                    <li><?= $paint->nama_barang; ?></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
@@ -87,20 +96,22 @@
                             <div class="row">
                                 <div class="accordion" id="accordionExample">
                                     <!-- content level -->
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <h2 class="mb-0">
-                                                <button class="btn btn-link btn-block text-left collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    Nama Level
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                Perlu tabel
+                                    <?php foreach ($paintinggg as $paint) : ?>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                        <?= $paint->nama_level; ?>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <?= $paint->ket; ?>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    <?php endforeach; ?>
                                     <!-- end -->
                                 </div>
                             </div>
@@ -111,8 +122,8 @@
             <div class="col-lg-4">
                 <div class="c_details_list">
                     <ul class="list">
-                        <li><a href="#">Coach’s Name <span>Nama coach</span></a></li>
-                        <li><a href="#">Course Fee <span>Rp 2000.000/bln</span></a></li>
+                        <li><a href="#">Coach’s Name <span>Syarifudin Awal, S.Sn.</span></a></li>
+                        <li><a href="#">Course Fee <span>Rp 2000.000/12x pert</span></a></li>
                     </ul>
                     <a class="main_btn" href="#">Daftar Sekarang</a>
                 </div>

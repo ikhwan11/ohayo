@@ -35,10 +35,10 @@
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/Web_courseManga">Manga</a>
-                                <li class="nav-item"><a class="nav-link" href="/Web_coursePainting">Painting</a>
-                                <li class="nav-item"><a class="nav-link" href="/Web_courseDigital">Manga Digital</a>
-                                <li class="nav-item"><a class="nav-link" href="/Web_courseCrayon">Crayon</a>
+                                <li class="nav-item"><a class="nav-link" href="/Web_course/">Manga</a>
+                                <li class="nav-item"><a class="nav-link" href="/Web_course/painting">Painting</a>
+                                <li class="nav-item"><a class="nav-link" href="/Web_course/digital">Digital Art</a>
+                                <li class="nav-item"><a class="nav-link" href="/Web_course/crayon">Crayon</a>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/Web_pendaftaran">Daftar Kursus</a></li>

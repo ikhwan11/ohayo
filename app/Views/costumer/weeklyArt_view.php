@@ -11,7 +11,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/assets/ohayo_item/weekly-1.jpg" class="tales" alt="...">
+            <img src="/assets/ohayo_item/weekly-1-min.jpg" class="tales" alt="...">
             <div class="carousel-caption text-left">
                 <div class="col">
                     <h1>Art and emotion</h1>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/assets/ohayo_item/weekly-2.jpg" class="tales" alt="...">
+            <img src="/assets/ohayo_item/weekly-2-min.jpg" class="tales" alt="...">
             <div class="carousel-caption text-left">
                 <div class="col">
                     <h1>Art is an Expression</h1>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/assets/ohayo_item/weekly-3.jpg" class="tales" alt="...">
+            <img src="/assets/ohayo_item/weekly-3-min.jpg" class="tales" alt="...">
             <div class="carousel-caption text-left">
                 <div class="col">
                     <h1>Art is Creation</h1>
