@@ -41,12 +41,26 @@
                                 <li class="nav-item"><a class="nav-link" href="/Web_course/crayon">Crayon</a>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/Web_pendaftaran">Daftar Kursus</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/login/masuk">Login</a></li>
+
+                        <?php if (session()->get('level') == 'peserta') { ?>
+
+                            <li class="nav-item"><a class="nav-link" href="/peserta_feedback">Feedback</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#LogoutModal"><?= session()->get('nama'); ?> | Logout</a></li>
+
+                        <?php } else { ?>
+                            <li class="nav-item"><a class="nav-link" href="/Web_pendaftaran">Daftar Kursus</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/login/masuk">Login</a></li>
+
+                        <?php } ?>
                     </ul>
+
                 </div>
             </div>
         </nav>
     </div>
 </header>
+
+
+
 <!--================Header Menu Area =================-->

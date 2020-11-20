@@ -9,7 +9,11 @@
             <div class="sidebar-brand-icon">
                 <img src="/assets/ohayo_item/Logo_Ohayo.png" width="80">
             </div>
-            <div class="sidebar-brand-text mx-3">Admin</div>
+            <?php if (session()->get('level') == 'owner') { ?>
+                <div class="sidebar-brand-text mx-3">Owner</div>
+            <?php } else { ?>
+                <div class="sidebar-brand-text mx-3">Admin</div>
+            <?php } ?>
         </a>
 
         <!-- Divider -->
@@ -75,14 +79,14 @@
         </li>
 
         <li class="nav-item">
+            <a class="nav-link" href="/Admin_feedback">
+                <i class="fas fa-comment-alt"></i>
+                <span>Feedback</span></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="/Admin_equipment">
                 <i class="fas fa-school"></i>
                 <span>Equipment</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="">
-                <i class="fas fa-school"></i>
-                <span>Feedback</span></a>
         </li>
 
 

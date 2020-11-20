@@ -2,22 +2,35 @@
 
 <?= $this->section('content'); ?>
 <!--================Home Banner Area =================-->
-<section class="home_banner_area">
-    <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing">
-        <div class="container">
-            <div class="banner_content text-right">
-                <h3 style="color: #EF3660 ;">Let's Join With us</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6" style="color: #EF3660 ;">Ohayo drawing school adalah kelas kursus gambar pilihan terbaik dan sangat populer dikalangan remaja terutama dengan kelas manga, karena kelas manga memiliki modul dan materi yang ter-update. </div>
-                    </div>
+
+<?php if (session()->get('level') == 'peserta') { ?>
+    <section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing">
+            <div class="container">
+                <div class="banner_content text-right">
+                    <h3 style="color: #EF3660 ;">Hi, <?= session()->get('nama'); ?></h3>
                 </div>
-                <a class="main_btn" href="#">Daftar Sekarang >></a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php } else { ?>
+    <section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing">
+            <div class="container">
+                <div class="banner_content text-right">
+                    <h3 style="color: #EF3660 ;">Let's Join With us</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6" style="color: #EF3660 ;">Ohayo drawing school adalah kelas kursus gambar pilihan terbaik dan sangat populer dikalangan remaja terutama dengan kelas manga, karena kelas manga memiliki modul dan materi yang ter-update. </div>
+                        </div>
+                    </div>
+                    <a class="main_btn" href="#">Daftar Sekarang >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php } ?>
 <!--================End Home Banner Area =================-->
 
 <!--================Blog Categorie Area =================-->

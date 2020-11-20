@@ -20,12 +20,6 @@ class Login extends BaseController
     $row = $model->get_data_login($username, $table);
 
     if ($row == NULL) {
-      // session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-      //       username salah
-      //       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      //         <span aria-hidden="true">&times;</span>
-      //       </button>
-      //     </div>');
       return redirect()->to('/login/');
     }
 
@@ -46,10 +40,10 @@ class Login extends BaseController
           return redirect()->to('/Admin_dashboard');
           break;
         case 'owner':
-          return redirect()->to('/Owner_dashboard');
+          return redirect()->to('/Admin_dashboard');
           break;
         case 'peserta':
-          return redirect()->to('/Peserta_dashboard');
+          return redirect()->to('/');
           break;
         default:
           break;
