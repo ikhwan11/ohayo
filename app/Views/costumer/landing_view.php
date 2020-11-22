@@ -70,7 +70,7 @@
                     <img src="/assets/ohayo_item/event.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
-                            <a href="#">
+                            <a href="/Web_event/">
                                 <h5>Event Ohayo</h5>
                             </a>
                             <div class="border_line"></div>

@@ -60,3 +60,42 @@
 .art {
   width: 600px;
 }
+
+/* event */
+.event {
+  background-color: #f11b86;
+  border-radius: 5px;
+}
+
+.kartu {
+  background-color: #4dbf1c;
+  color: white;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0, 0.5);
+}
+
+/* detail event */
+.kata {
+  background-color: #4dbf1c;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.detail {
+  background-color: #4dbf1c;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.ket {
+  background-color: #f11b86;
+  color: #4dbf1c;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 20px;
+}

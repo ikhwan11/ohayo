@@ -73,6 +73,11 @@
         </li>
 
         <li class="nav-item">
+            <a class="nav-link" href="/Admin_acara/">
+                <i class="fas fa-star"></i>
+                <span>Acara</span></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="/Admin_kelolaUser">
                 <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
