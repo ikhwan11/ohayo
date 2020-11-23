@@ -8,8 +8,15 @@
         <div class="col">
             <h1>Data Murid Ohayo Drawing School</h1>
         </div>
-
-
+    </div>
+</div>
+<div class="row">
+    <div class="col text-right">
+        <a href="/Admin_kelolaTransaksi/filter_laporan/" class="btn btn-dark mb-2"> Buat laporan peserta bar</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
         <table class="table table-hover table-striped table-bordered">
             <thead>
                 <tr>
@@ -46,6 +53,5 @@
         <?= $pager->links('peserta', 'admin_pagination'); ?>
     </div>
 </div>
-
 
 <?= $this->endSection(); ?>

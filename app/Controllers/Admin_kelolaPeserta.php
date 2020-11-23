@@ -148,7 +148,7 @@ class Admin_kelolaPeserta extends BaseController
     $transaksi = new TransaksiModel();
     $transaksi->save([
       'jenis_transaksi' => 'Transaksi masuk',
-      'total' => $this->request->getVar('total'),
+      'total' => (int)$this->request->getVar('total'),
       'ket' => 'Transaksi awal registrasi'
     ]);
 

@@ -28,14 +28,14 @@
                     <li class="list-group-item">Tanggal : <?= $event['tanggal_acara']; ?></li>
                     <li class="list-group-item">Biaya pendaftaran : Rp. <?= $event['biaya']; ?></li>
                     <li class="list-group-item">Limit Peserta : <?= $event['limit_peserta']; ?></li>
-                    <li class="list-group-item">Status Event : <?php if ($event['status'] == 'aktif') {
+                    <li class="list-group-item">Status Event : <?php if ($event['status_acara'] == 'aktif') {
                                                                 ?>
-                            <span class="badge badge-success"><?= $event['status']; ?></span>
+                            <span class="badge badge-success"><?= $event['status_acara']; ?></span>
                         <?php } else { ?>
-                            <span class="badge badge-danger"><?= $event['status']; ?></span>
+                            <span class="badge badge-danger"><?= $event['status_acara']; ?></span>
                         <?php } ?></li>
                 </ul>
-                <?php if ($event['status'] == 'aktif') { ?>
+                <?php if ($event['status_acara'] == 'aktif') { ?>
                     <a href="/Web_event/daftar_event" class="btn btn-warning btn-lg">Daftar Event</a>
                 <?php } else { ?>
                     <a href="#" class="btn btn-secondary btn-lg">Event selesai</a>

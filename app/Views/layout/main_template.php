@@ -60,7 +60,7 @@
                         <ul class="list">
 
                             <li><a href="/Web_about">About us</a></li>
-                            <li><a href="#">Mendaftar Kursus</a></li>
+                            <li><a href="/Web_pendaftaran/">Mendaftar Kursus</a></li>
                         </ul>
                     </div>
                 </div>

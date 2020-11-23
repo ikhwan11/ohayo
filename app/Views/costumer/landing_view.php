@@ -25,7 +25,7 @@
                             <div class="col-md-6" style="color: #EF3660 ;">Ohayo drawing school adalah kelas kursus gambar pilihan terbaik dan sangat populer dikalangan remaja terutama dengan kelas manga, karena kelas manga memiliki modul dan materi yang ter-update. </div>
                         </div>
                     </div>
-                    <a class="main_btn" href="#">Daftar Sekarang >></a>
+                    <a class="main_btn" href="/Web_pendaftaran/">Daftar Sekarang >></a>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/manga_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/Web_courseManga">Detail</a>
+                                <a class="cat" href="/Web_course/manga">Detail</a>
                                 <a href="#">
                                     <h4>Manga Class</h4>
                                 </a>
@@ -176,7 +176,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/painting_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/Web_coursePainting">Detail</a>
+                                <a class="cat" href="/Web_course/painting">Detail</a>
                                 <a href="#">
                                     <h4>Painting Class</h4>
                                 </a>
@@ -190,7 +190,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/crayon.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/Web_courseCrayon">Detail</a>
+                                <a class="cat" href="/Web_course/crayon">Detail</a>
                                 <a href="#">
                                     <h4>Crayon Class</h4>
                                 </a>
@@ -204,7 +204,7 @@
                         <div class="courses_item">
                             <img src="/assets/ohayo_item/digitalart_class.jpg" alt="">
                             <div class="hover_text">
-                                <a class="cat" href="/Web_courseDigital">Detail</a>
+                                <a class="cat" href="/Web_course/digital">Detail</a>
                                 <a href="#">
                                     <h4>Digital Art Class</h4>
                                 </a>

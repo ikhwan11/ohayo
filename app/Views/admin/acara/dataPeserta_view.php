@@ -57,7 +57,6 @@
     <a href="/Admin_dashboard/" class="btn btn-primary">Kembali ke dashboard</a>
     <a href="/Admin_acara/peserta_masuk" class="btn btn-success">Peserta Event masuk</a>
     <a href="#" class="btn btn-warning">Print data peserta</a>
-    <a href="#" class="btn btn-danger">Hapus data peserta Event</a>
 </div>
 
 <?= $this->endSection(); ?>

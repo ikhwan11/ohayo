@@ -33,12 +33,18 @@ class Web_event extends BaseController
 
     public function daftar_event()
     {
-        $EventModel = new EventModel();
+
+        $this->EventModel = new EventModel();
+
+        $query = $this->EventModel->query("SELECT * FROM event_acara WHERE status_acara = 'aktif'");
+        $row = $query->getResult();
+
+
         $course = 'Ohayo |';
         $data = [
             'tittle' => $course . ' Daftar Event',
             'validation' => \Config\Services::validation(),
-            'event' => $EventModel->findAll()
+            'event' => $row
         ];
 
         return view('costumer/formDaftarEvent_view', $data);

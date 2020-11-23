@@ -70,9 +70,9 @@ class Admin_kelolaTransaksi extends BaseController
         ]);
 
         $this->TransaksiModel->save([
-            'jenis_transaksi' => 'transaksi masuk',
+            'jenis_transaksi' => 'Transaksi masuk',
             'ket' => 'Transaksi tambah kelas',
-            'total' => $this->request->getVar('total')
+            'total' => (int)$this->request->getVar('total')
 
         ]);
         session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -103,7 +103,7 @@ class Admin_kelolaTransaksi extends BaseController
         $this->TransaksiModel->save([
             'jenis_transaksi' => 'Transaksi keluar',
             'ket' => $this->request->getVar('ket'),
-            'total' => $this->request->getVar('total')
+            'total' => (int)$this->request->getVar('total')
         ]);
         session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
         Transaksi Berhasil
@@ -112,5 +112,73 @@ class Admin_kelolaTransaksi extends BaseController
         </button>
       </div>');
         return redirect()->to('/Admin_kelolaTransaksi/');
+    }
+
+    public function filter_laporan()
+    {
+
+        $corp = 'Admin |';
+        $data = [
+            'tittle' => $corp . ' Laporan transaksi',
+            'data' => $this->TransaksiModel->findAll(),
+            'validation' => \Config\Services::validation(),
+        ];
+
+        return view('admin/transaksi/filterLaporan_view', $data);
+    }
+
+    public function filterLaporan_aksi()
+    {
+        if (!$this->validate([
+            'dari' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'wajib diisi'
+                ]
+            ],
+            'sampai' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'wajib diisi'
+                ]
+            ],
+
+        ])) {
+
+            return redirect()->to('/Admin_kelolaTransaksi/filter_laporan')->withInput();
+        }
+
+        $dari = $this->request->getVar('dari');
+        $sampai = $this->request->getVar('sampai');
+
+        $query = $this->TransaksiModel->query("SELECT * FROM transaksi WHERE date(created_at)>= '$dari' AND date(created_at)<= '$sampai'");
+        $row = $query->getResult();
+
+        $i = $this->TransaksiModel->query("SELECT * From transaksi where jenis_transaksi = 'Transaksi Keluar'");
+        $keluar = $i->getResult();
+        $total_kel = 0;
+        foreach ($keluar as $tot_kel) {
+            $total_kel += $tot_kel->total;
+        }
+
+        $a = $this->TransaksiModel->query("SELECT * From transaksi where jenis_transaksi = 'Transaksi Masuk'");
+        $masuk = $a->getResult();
+
+        $total_mas = 0;
+        foreach ($masuk as $tot_mas) {
+            $total_mas += $tot_mas->total;
+        }
+
+
+        $corp = 'Admin |';
+        $data = [
+            'tittle' => $corp . ' Laporan transaksi',
+            'data' => $row,
+            'masuk' => $total_mas,
+            'keluar' => $total_kel
+
+        ];
+
+        return view('admin/transaksi/laporan_view', $data);
     }
 }

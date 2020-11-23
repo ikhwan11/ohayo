@@ -17,7 +17,7 @@
                         <select class="form-control mt-3 mb-3 <?= ($validation->hasError('judul_event')) ? 'is-invalid' : ''; ?>" name="judul_event" id="judul_event">
                             <option value="">== pilih Event==</option>
                             <?php foreach ($event as $k) : ?>
-                                <option value="<?= $k['judul_event']; ?>"><?= $k['judul_event']; ?></option>
+                                <option value="<?= $k->judul_event; ?>"><?= $k->judul_event; ?></option>
                             <?php endforeach; ?>
                         </select>
                         <div class="invalid-feedback">

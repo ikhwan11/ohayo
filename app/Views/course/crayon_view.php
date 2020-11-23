@@ -127,7 +127,7 @@
                         <li><a href="#">Coach’s Name <span>Indah Putri Ayu</span></a></li>
                         <li><a href="#">Course Fee <span>Rp 2000.000/12x pert</span></a></li>
                     </ul>
-                    <a class="main_btn" href="#">Daftar Sekarang</a>
+                    <a class="main_btn" href="/Web_pendaftaran/">Daftar Sekarang</a>
                 </div>
             </div>
         </div>
