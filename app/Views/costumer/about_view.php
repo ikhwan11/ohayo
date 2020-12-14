@@ -10,13 +10,13 @@
      </ol>
      <div class="carousel-inner">
          <div class="carousel-item active">
-             <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
+             <img src="/assets/ohayo_item/about 3.jpg" class="tales" alt="...">
          </div>
          <div class="carousel-item">
-             <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
+             <img src="/assets/ohayo_item/about 2.jpg" class="tales" alt="...">
          </div>
          <div class="carousel-item">
-             <img src="/assets/ohayo_item/daily_art.jpg" class="tales" alt="...">
+             <img src="/assets/ohayo_item/about 1.jpg" class="tales" alt="...">
          </div>
      </div>
      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -97,16 +97,23 @@
              </div>
              <div class="col-lg-6">
                  <div class="video_area" id="video">
-                     <img class="img-fluid" src="/assets/learnit_templates/img/video-1.jpg" alt="">
-                     <a class="popup-youtube" href="https://www.youtube.com/watch?v=VufDd-QL1c0">
+                     <img class="img-fluid" src="/assets/ohayo_item/thumb video.png" alt="">
+                     <a class="popup-youtube" href="/assets/ohayo_item/video.mp4">
                          <img src="img/icon/video-icon-1.png" alt="">
                      </a>
                  </div>
              </div>
          </div>
          <div class="about_details">
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+             <img src="/assets/ohayo_item/owner.jpg" class="rounded float-left mr-3" style="width: 200px;">
+             <h5><b>Deolinda Fidelya</b> | Owner Ohayo Drawing School Batam</h5>
+             <p>Selamat datang di website Ohayo Drawing School Batam, di sisni kami memberikan infomasi terbaik dan terupdate tentang tempat kurusu kami. pada ohayo drawing school batam memiliki 4 jenis kelas yaitu manga, digital art, painting, dan crayon. kami memiliki trainer yang berpengalaman serta menyenangkan.</p>
+
+             <p>OHAYO Drawing School merupakan sekolah lukis hasil karya anak bangsa pertama di Indonesia yang mempunyai standart International, Mempunyai konsep unik, tematik dan berbeda di setiap center center kami ; Mempunyai module pengajaran yang lengkap dan berkualitas hasil 2x Study Trip kami ke Jepang dan mengikuti berbagai Workshop di 5 negara seperti Jepang, Singapore, Malaysia, Thailand dan Indonesia ; Mempunyai acara tahunan seperti Lomba Nasional & Workshop dan Lomba International kami bekerjasama dengan Republik Ceko. Mempunyai Departemen Training yang menjamin kualitas guru di seluruh center di Indonesia dengan adanya Update Training setiap bulan dan Ujian Kompetensi Guru OHAYO. Di bawah payung PT. Mitra Indonesia Cerdas pimpinan Oscar Sumarli, SE dan Widyana Susanty, SE, ARAD, RAD RTS yang mempunyai impian agar pendidikan yang berkualitas bisa dinikmati oleh anak anak Indonesia dengan harga yang terjangkau dan merata di seluruh wilayah Indonesia, Merek kami lainnya adalah Mopi Baca Tulis, Xile Mandarin, Gakko Digital Art & Animation dan SHANE English Center.</p>
+
+             <p>Mempunyai Departemen Training yang menjamin kualitas guru di seluruh center di Indonesia dengan adanya Update Training setiap bulan dan Ujian Kompetensi Guru OHAYO. Di bawah payung PT. Mitra Indonesia Cerdas pimpinan Oscar Sumarli, SE dan Widyana Susanty, SE, ARAD, RAD RTS yang mempunyai impian agar pendidikan yang berkualitas bisa dinikmati oleh anak anak Indonesia dengan harga yang terjangkau dan merata di seluruh wilayah Indonesia, Merek kami lainnya adalah Mopi Baca Tulis, Xile Mandarin, Gakko Digital Art & Animation dan SHANE English Center.</p>
+
+             <p>terima kasih atas kunjungannya semoga anda tertarik untuk bergabung bersama kami.</p>
          </div>
      </div>
  </section>

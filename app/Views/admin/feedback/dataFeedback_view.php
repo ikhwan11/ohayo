@@ -33,7 +33,7 @@
                 <?php endforeach; ?>
             </table>
 
-            <a href="/Admin_dashboard" class="btn btn-primary">Kembali</a>
+            <a href="/Admin_dashboard/" class="btn btn-primary">Kembali</a>
         </div>
     </div>
 </div>

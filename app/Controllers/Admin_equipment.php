@@ -86,16 +86,4 @@ class Admin_equipment extends BaseController
       </div>');
         return redirect()->to('/Admin_equipment/barang/tambah_stok');
     }
-
-    public function delete($id)
-    {
-        $this->BarangModel->delete($id);
-        session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        Data Barang berhasil dihapus
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>');
-        return redirect()->to('/Admin_equipment/');
-    }
 }

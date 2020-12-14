@@ -34,7 +34,7 @@
                         <span class="badge badge-secondary"><?= $e['tanggal_acara']; ?></span>
 
                         <?php
-                        if ($e['status'] == 'aktif') {
+                        if ($e['status_acara'] == 'aktif') {
                             echo '<span class="badge badge-success">aktif</span>';
                         } else {
                             echo '<span class="badge badge-danger">selesai</span>';

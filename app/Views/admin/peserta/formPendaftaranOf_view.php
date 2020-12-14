@@ -40,8 +40,8 @@
                         <label>Jenis kelamin</label>
                         <select class="form-control" name="gender" id="gender">
                             <option value="disable">== pilih gender==</option>
-                            <option value="">Laki-Laki</option>
-                            <option value="">Perempuan</option>
+                            <option value="L">Laki-Laki</option>
+                            <option value="P">Perempuan</option>
 
                         </select> <br>
 

@@ -4,7 +4,7 @@
 <!--================Home Banner Area =================-->
 
 <?php if (session()->get('level') == 'peserta') { ?>
-    <section class="home_banner_area">
+    <section class="home_banner_area mt-3">
         <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing">
             <div class="container">
                 <div class="banner_content text-right">
@@ -14,8 +14,8 @@
         </div>
     </section>
 <?php } else { ?>
-    <section class="home_banner_area">
-        <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing">
+    <section class="home_banner_area mt-3">
+        <div class="banner_inner d-flex align-items-center jumbotron jumbotron-landing ">
             <div class="container">
                 <div class="banner_content text-right">
                     <h3 style="color: #EF3660 ;">Let's Join With us</h3>
@@ -56,11 +56,11 @@
                     <img src="/assets/ohayo_item/tps_trik.jpg" alt="post">
                     <div class="categories_details">
                         <div class="categories_text">
-                            <a href="#">
-                                <h5>Tips & Trik Menggambar</h5>
+                            <a href="/Web_about/">
+                                <h5>About Us</h5>
                             </a>
                             <div class="border_line"></div>
-                            <p>sekilas trik dan teknik menggambar</p>
+                            <p>Cari tau tentang kami</p>
                         </div>
                     </div>
                 </div>

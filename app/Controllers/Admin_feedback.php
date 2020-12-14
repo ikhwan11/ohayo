@@ -6,10 +6,14 @@ use App\Models\FeedbackModel;
 
 class Admin_feedback extends BaseController
 {
+    protected $FeedbackModel;
+    public function __construct()
+    {
+        $this->FeedbackModel = new FeedbackModel();
+    }
 
     public function index()
     {
-        $this->FeedbackModel = new FeedbackModel();
 
         $corp = 'Admin |';
         $data = [
@@ -22,7 +26,6 @@ class Admin_feedback extends BaseController
 
     public function detail($id)
     {
-        $this->FeedbackModel = new FeedbackModel();
 
         $corp = 'Admin |';
         $data = [

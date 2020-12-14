@@ -78,20 +78,25 @@
                 <span>Acara</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Admin_kelolaUser">
+            <a class="nav-link" href="/Admin_kelolaUser/">
                 <i class="fas fa-user"></i>
                 <span>Kelola User</span></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="/Admin_feedback">
+            <a class="nav-link" href="/Admin_feedback/">
                 <i class="fas fa-comment-alt"></i>
                 <span>Feedback</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Admin_equipment">
+            <a class="nav-link" href="/Admin_equipment/">
                 <i class="fas fa-school"></i>
                 <span>Equipment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Admin_laporan/">
+                <i class="fas fa-file-alt"></i>
+                <span>Laporan Bulanan</span></a>
         </li>
 
 

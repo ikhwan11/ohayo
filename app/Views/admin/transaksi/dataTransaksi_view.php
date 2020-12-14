@@ -10,11 +10,6 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-right">
-            <a href="/Admin_kelolaTransaksi/filter_laporan/" class="btn btn-dark mb-2"> Buat Laporan</a>
-        </div>
-    </div>
-    <div class="row">
         <div class="col">
             <table class="table table-hover table-striped table-bordered">
                 <thead>

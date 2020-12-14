@@ -92,7 +92,7 @@ class Admin_kelolaPeserta extends BaseController
   {
     $this->pesertaModel->save([
       'id_peserta' => $id,
-      'status' => 'cuti'
+      'status_peserta' => 'cuti'
     ]);
     session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
         status peserta adalah cuti
@@ -107,7 +107,7 @@ class Admin_kelolaPeserta extends BaseController
   {
     $this->pesertaModel->save([
       'id_peserta' => $id,
-      'status' => 'aktif'
+      'status_peserta' => 'aktif'
     ]);
     session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
         status peserta adalah aktif
@@ -142,7 +142,7 @@ class Admin_kelolaPeserta extends BaseController
       'asal_sekolah' => $this->request->getVar('asal_sekolah'),
       'jenis_kursus' => $this->request->getVar('jenis_kursus'),
       'total_kelas' => (int)$this->request->getVar('jenis_paket'),
-      'status' => 'aktif'
+      'status_peserta' => 'aktif'
     ]);
 
     $transaksi = new TransaksiModel();
